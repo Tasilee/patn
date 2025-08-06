@@ -1,13 +1,13 @@
 # patn
 A home base for future information and code about [patn](https://patn.org): Watch this space.
 
-##Author
+## Author
 Lee Belbin
 
-##Developer/programmer
+## Developer/programmer
 Adam Collins 
 
-##What is patn?
+## What is patn?
 PATN does pattern analysis. patn is a comprehensive and extremely versatile, yet simple to use software package for extracting and displaying patterns in any type of complex multivariate data.
 
 PATN started life way back in 1984 as a practical tool for my CSIRO research into 'pattern analysis', a field established by the botanist, Professor Bill Williams and the computer scientist, Dr Godfrey Lance at CSIRO in Canberra Australia.
@@ -21,12 +21,12 @@ patn v3 was the first commercial release of PATN for Windows™. The key innovat
 PATN was placed into the 'public domain' in March 2019. For now, that means you can freely download the Windows installer version (v4). 
 With this move to github, PATN will become patn.
 
-##How does patn work?
+## How does patn work?
 patn generates estimates of association (resemblance, affinity, distance) between any set of objects described by a suite of variables (attributes). patn then classifies the objects into groups, condenses the information into three dimensions and displays the patterns in your data graphically.
 
 patn also has a range of tools to help you to to identify the reasons for these patterns.
 
-##Intent
+## Intent
 I have placed PATN into the public domain as I am less able through time to support it, and develop it further, but I still have some ideas that I would like to see implemented. 
 
 We set up this repository in preparation for releasing the current version of code of patn into the public domain. The software, while old, still has many features and tools that are not currently available. We are hoping that interested people will take it on to bring it into a future using the latest tools such as advanced graphics libraries, interfaces and AI.
