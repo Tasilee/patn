@@ -1,0 +1,2982 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// English (U.S.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+#endif //_WIN32
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON                    "res\\patn.ico"
+IDR_TABLETYPE           ICON                    "res\\Table.ico"
+IDI_ICON1               ICON                    "res\\icon1.ico"
+IDR_3DVIEW_ICON         ICON                    "res\\idr_tabl.ico"
+IDR_HISTOGRAM_ICON      ICON                    "res\\idr_3dvi.ico"
+IDR_SCATTERPLOT_ICON    ICON                    "res\\idr_hist.ico"
+IDR_ASSOC_ICON          ICON                    "res\\idr_scat.ico"
+IDR_DENDOGRAM_ICON      ICON                    "res\\ico00001.ico"
+IDR_TWAY_ICON           ICON                    "res\\ico00002.ico"
+IDR_ANOSIM_ICON         ICON                    "res\\idr_tway.ico"
+IDR_BW_ICON             ICON                    "res\\ico00003.ico"
+IDR_PCC_ICON            ICON                    "res\\ico00004.ico"
+IDR_MCAO_ICON           ICON                    "res\\idr_pcc_.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDR_MAINFRAME           BITMAP                  "res\\Toolbar.bmp"
+IDR_STDTOOLBAR          BITMAP                  "res\\IToolbar.bmp"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Toolbar
+//
+
+IDR_MAINFRAME TOOLBAR  16, 16
+BEGIN
+    BUTTON      ID_FILE_NEW
+    BUTTON      ID_FILE_IMPORT
+    BUTTON      ID_FILE_OPEN
+    BUTTON      ID_FILE_SAVE
+    SEPARATOR
+    BUTTON      ID_FILE_PRINT
+    BUTTON      ID_FILE_PRINT_PREVIEW
+    SEPARATOR
+    BUTTON      ID_TABLE_COLUMN_MAKEEXTRINSIC
+    BUTTON      ID_TABLE_COLUMN_MAKEINTRINSIC
+    BUTTON      ID_TABLE_COLUMN_GOTOEXTRINSICS
+    SEPARATOR
+    BUTTON      ID_TABLE_ROW_MAKEEXTRINSIC
+    BUTTON      ID_TABLE_ROW_MAKEINTRINSIC
+    BUTTON      ID_TABLE_ROW_GOTOEXTRINSICS
+    SEPARATOR
+    BUTTON      ID_TOOLS_DATATRANSFORMATION
+    BUTTON      ID_TOOLS_DATAANALYSIS
+    BUTTON      ID_TOOLS_DATAEVALUATION
+    SEPARATOR
+    BUTTON      ID_CONTEXTMENU
+    SEPARATOR
+    BUTTON      ID_APP_ABOUT
+END
+
+IDR_STDTOOLBAR TOOLBAR  16, 16
+BEGIN
+    BUTTON      ID_TABLE_COLUMN_MAKEEXTRINSIC
+    BUTTON      ID_TABLE_COLUMN_MAKEINTRINSIC
+    BUTTON      ID_TABLE_COLUMN_GOTOEXTRINSICS
+    SEPARATOR
+    BUTTON      ID_TABLE_ROW_MAKEEXTRINSIC
+    BUTTON      ID_TABLE_ROW_MAKEINTRINSIC
+    BUTTON      ID_TABLE_ROW_GOTOEXTRINSICS
+    SEPARATOR
+    BUTTON      ID_TOOLS_DATATRANSFORMATION
+    BUTTON      ID_TOOLS_DATAANALYSIS
+    BUTTON      ID_TOOLS_DATAEVALUATION
+    SEPARATOR
+    BUTTON      ID_CONTEXTMENU
+    SEPARATOR
+    BUTTON      ID_APP_ABOUT
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDR_MAINFRAME MENU 
+BEGIN
+    POPUP "&File"
+    BEGIN
+        MENUITEM "&New\tCtrl+N",                ID_FILE_NEW
+        MENUITEM "&Open...\tCtrl+O",            ID_FILE_OPEN
+        MENUITEM "&Import...\tCtrl+I",          ID_FILE_IMPORT
+        MENUITEM "OD&BC Connection \tCtrl+B",   ID_FILE_ODBCCONNECTION
+        MENUITEM SEPARATOR
+        MENUITEM "P&rint Setup...",             ID_FILE_PRINT_SETUP
+        MENUITEM SEPARATOR
+        MENUITEM "Recent File",                 ID_FILE_MRU_FILE1, GRAYED
+        MENUITEM SEPARATOR
+        MENUITEM "E&xit",                       ID_APP_EXIT
+    END
+    POPUP "&View"
+    BEGIN
+        MENUITEM "&Toolbar",                    ID_VIEW_TOOLBAR
+        MENUITEM "&PATN Toolbar",               33030
+        MENUITEM "&Status Bar",                 ID_VIEW_STATUS_BAR
+    END
+    POPUP "&Help"
+    BEGIN
+        MENUITEM "&Help Topics",                ID_HELP_FINDER
+        MENUITEM SEPARATOR
+        MENUITEM "PATN Online",                 ID_HELP_PATNONLINE
+        MENUITEM "Discussion Forum",            ID_HELP_DISCUSSIONFORUM
+        MENUITEM SEPARATOR
+        MENUITEM "&About PATN...",              ID_APP_ABOUT
+    END
+END
+
+IDR_TABLETYPE MENU 
+BEGIN
+    POPUP "&File"
+    BEGIN
+        MENUITEM "&New\tCtrl+N",                ID_FILE_NEW
+        MENUITEM "&Open...\tCtrl+O",            ID_FILE_OPEN
+        MENUITEM "&Import...\tCtrl+I",          ID_FILE_IMPORT
+        MENUITEM "OD&BC Connection \tCtrl+B",   ID_FILE_ODBCCONNECTION
+        MENUITEM "Appen&d \tCtrl+A ",           ID_FILE_APPEND
+        MENUITEM "&Close",                      ID_FILE_CLOSE
+        MENUITEM "&Save\tCtrl+S",               ID_FILE_SAVE
+        MENUITEM "Save &As...",                 ID_FILE_SAVE_AS
+        MENUITEM SEPARATOR
+        MENUITEM "&Print...\tCtrl+P",           ID_FILE_PRINT
+        MENUITEM "Print Pre&view",              ID_FILE_PRINT_PREVIEW
+        MENUITEM "P&rint Setup...",             ID_FILE_PRINT_SETUP
+        MENUITEM SEPARATOR
+        MENUITEM "Recent File",                 ID_FILE_MRU_FILE1, GRAYED
+        MENUITEM SEPARATOR
+        POPUP "&Import Analysis Data"
+        BEGIN
+            MENUITEM "&Row Group Composition",      ID_FILE_LOAD_ROWAFFINITYVECTOR
+
+            MENUITEM "&Column Group Composition",   ID_FILE_LOAD_COLUMNAFFINITYVECTOR
+
+            MENUITEM "A Priori Row Group Composition", 
+                                                    ID_IMPORT_APRIORIROWGROUPCOMPOSITION
+
+            MENUITEM "Row Dendrogram Order",        ID_IMPORTANALYSISDATA_ROWDENDOGRAMORDER
+
+            MENUITEM "Column Dendrogram Order",     ID_IMPORTANALYSISDATA_COLUMNDENDOGRAMORDER
+
+            MENUITEM "Row Lower-Symetric Association Matrix", 
+                                                    ID_IMPORTANALYSISDATA_ROWLOWER
+
+            MENUITEM "Column Lower-Symetric Association Matrix", 
+                                                    ID_IMPORTANALYSISDATA_COLUMNLOWER
+
+            MENUITEM "&Ordination Coordinates (Rows Only)", 
+                                                    ID_FILE_LOAD_ORDINATION
+        END
+        POPUP "&Export Data Table"
+        BEGIN
+            MENUITEM "Data",                        ID_FILE_EXPORT_TABLEANDINFOTABS
+
+            MENUITEM "Site Count",                  ID_FILE_EXPORT_SITECOUNT
+        END
+        POPUP "Export Analysis Data"
+        BEGIN
+            MENUITEM "Row Assocation Matrix",       ID_FILE_EXPORT_ROWASSOCATIONMATRIX
+
+            MENUITEM "Column Association Matrix",   ID_FILE_EXPORT_COLUMNASSOCIATIONMATRIX
+
+            MENUITEM "Row Group Composition",       ID_FILE_EXPORT_ROWAFFINITYVECTOR
+
+            MENUITEM "Column Group Composition",    ID_FILE_EXPORT_COLUMNAFFINITYVECTOR
+
+            MENUITEM "Row Fusion Table",            ID_FILE_EXPORT_ROWFUSIONTABLE
+
+            MENUITEM "Column Fusion Table",         ID_FILE_EXPORT_COLUMNFUSIONTABLE
+
+            MENUITEM "Ordination Coordinates",      ID_FILE_EXPORT_ORDINATIONCOORDINATES
+
+        END
+        POPUP "Export Evaluation Data"
+        BEGIN
+            MENUITEM "Row Group Statistics",        ID_FILE_EXPORT_GROUPSTATISTICS
+
+            MENUITEM "Column Group Statistics",     ID_EXPORTEVALUATIONDATA_COLUMNGROUPSTATISTICS
+
+            MENUITEM "Row ANOSIM Results",          ID_FILE_EXPORT_ROWANISMRESULTS
+
+            MENUITEM "Column ANOSIM Results",       ID_FILE_EXPORT_COLUMNANISMRESULTS
+
+            MENUITEM "Kruskal-Wallis Stats",        ID_FILE_EXPORT_KRUSKALWALLICESTATS
+
+            MENUITEM "PCC Results",                 ID_FILE_EXPORT_PCCRESULTS
+
+            MENUITEM "MCAO Results",                ID_FILE_EXPORT_MCAORESULTS
+
+        END
+        MENUITEM "Export History",              ID_FILE_EXPORT_HISTORY
+        MENUITEM SEPARATOR
+        MENUITEM "Check for &Update",           33043
+        MENUITEM SEPARATOR
+        MENUITEM "E&xit",                       ID_APP_EXIT
+    END
+    POPUP "View"
+    BEGIN
+        MENUITEM "Standard &Toolbar",           ID_VIEW_TOOLBAR
+        MENUITEM "&PATN Toolbar",               ID_VIEW_PATNTOOLBAR
+        MENUITEM "&Status Bar",                 ID_VIEW_STATUS_BAR
+        MENUITEM SEPARATOR
+        MENUITEM "D&ata Table",                 ID_SHOWTABLE
+        MENUITEM "&Histograms",                 ID_VIEW_HISTOGRAM
+        MENUITEM "Scatter Plot",                ID_VIEW_SCATTERPLOT33034
+        MENUITEM SEPARATOR
+        MENUITEM "&Association",                ID_VIEW_ASSOCIATIONMATRIX
+        MENUITEM "&Dendrograms",                ID_VIEW_FUSIONDETAILS
+        MENUITEM "T&wo-way Table",              ID_VIEW_TWAYTABLE
+        MENUITEM "&Ordination Plot",            ID_VIEW_3DGRAPH_DIRECTX70A
+        MENUITEM SEPARATOR
+        MENUITEM "ANOSIM &Results",             ID_VIEW_ANOSIMRESULTS
+        MENUITEM "&Box-Whisker",                ID_VIEW_BOXWHISKERSTATISTICS
+        MENUITEM "Constancy && Fidelity",       ID_VIEW_CONSTFID
+        MENUITEM "P&CC Results",                ID_VIEW_PCCRESULTS
+        MENUITEM "&MCAO Results",               ID_VIEW_MCAO
+        MENUITEM SEPARATOR
+        MENUITEM "Histor&y",                    ID_VIEW_HISTORY
+    END
+    POPUP "&Data"
+    BEGIN
+        MENUITEM "&Transformation",             ID_TOOLS_DATATRANSFORMATION
+        MENUITEM "&Analysis",                   ID_TOOLS_DATAANALYSIS
+        MENUITEM "&Evaluation",                 ID_TOOLS_DATAEVALUATION
+        MENUITEM SEPARATOR
+        MENUITEM "&Selection Options",          ID_TABLE_SELECTIONOPTIONS
+        MENUITEM "Delete Duplicate Rows",       33045
+        MENUITEM "T&ranspose",                  ID_TABLE_TANSPOSEDATALABELS
+        MENUITEM "Create new variables from variable groups", 
+                                                ID_DATA_CREATENEWVARIABLESREPRESENTINGGROUPS
+
+        MENUITEM "Swap Row Intrinsics with Extrinsics", 
+                                                ID_DATA_SWAPROWINTRINSICSWITHEXTRINSICS
+
+        MENUITEM "Swap Column Intrinsics with Extrinsics", 
+                                                ID_DATA_SWAPCOLUMNINTRINSICSWITHEXTRINSICS
+
+        MENUITEM "Variables < KW threashold to Extrinsics", 
+                                                ID_DATA_VARIABLES_KW_TO_EXTRINSICS
+
+        MENUITEM "Assign Groups to non-grouped rows", 
+                                                ID_DATA_ASSIGNGROUPSTONON
+        MENUITEM SEPARATOR
+        POPUP "&Row"
+        BEGIN
+            MENUITEM "&Select",                     ID_TABLE_ROW_SELECT
+            MENUITEM SEPARATOR
+            MENUITEM "&Hide",                       ID_TABLE_ROW_HIDE
+            MENUITEM "&Unhide",                     ID_TABLE_ROW_UNHIDE
+            MENUITEM SEPARATOR
+            MENUITEM "&Add",                        ID_TABLE_ROW_ADD
+            MENUITEM "&Insert",                     ID_TABLE_ROW_INSERT
+            MENUITEM "&Delete",                     ID_TABLE_ROW_DELETE
+            MENUITEM SEPARATOR
+            MENUITEM "Make Extrinsic",              ID_TABLE_ROW_MAKEEXTRINSIC
+
+            MENUITEM "Make Intrinsic",              ID_TABLE_ROW_MAKEINTRINSIC
+
+            MENUITEM "Go To Extrinsics",            ID_TABLE_ROW_GOTOEXTRINSICS
+
+            MENUITEM SEPARATOR
+            MENUITEM "&Groups",                     ID_TABLE_ROW_GROUPS
+            MENUITEM "&a priori Groups",            ID_DATA_CONTROLGROUPS
+            MENUITEM SEPARATOR
+            MENUITEM "&Properties",                 ID_TABLE_ROW_PROPERTIES
+        END
+        POPUP "&Column"
+        BEGIN
+            MENUITEM "&Select",                     ID_TABLE_COLUMN_SELECT
+            MENUITEM SEPARATOR
+            MENUITEM "&Hide",                       ID_TABLE_COLUMN_HIDE
+            MENUITEM "&Unhide",                     ID_TABLE_COLUMN_UNHIDE
+            MENUITEM SEPARATOR
+            MENUITEM "&Add",                        ID_TABLE_COLUMN_ADD
+            MENUITEM "&Insert",                     ID_TABLE_COLUMN_INSERT
+            MENUITEM "&Delete",                     ID_TABLE_COLUMN_DELETE
+            MENUITEM SEPARATOR
+            MENUITEM "Make Extrinsic",              ID_TABLE_COLUMN_MAKEEXTRINSIC
+
+            MENUITEM "Make Intrinsic",              ID_TABLE_COLUMN_MAKEINTRINSIC
+
+            MENUITEM "Go To Extrinsics",            ID_TABLE_COLUMN_GOTOEXTRINSICS
+
+            MENUITEM SEPARATOR
+            MENUITEM "&Groups",                     ID_TABLE_COLUMN_GROUPS
+            MENUITEM SEPARATOR
+            MENUITEM "&Properties",                 ID_TABLE_COLUMN_PROPERTIES
+
+        END
+    END
+    POPUP "&Tools"
+    BEGIN
+        MENUITEM "&Options",                    ID_TOOLS_OPTIONS
+    END
+    POPUP "&Window"
+    BEGIN
+        MENUITEM "&Cascade",                    ID_WINDOW_CASCADE
+        MENUITEM "&Tile",                       ID_WINDOW_TILE_HORZ
+        MENUITEM "&Arrange Icons",              ID_WINDOW_ARRANGE
+    END
+    POPUP "&Help"
+    BEGIN
+        MENUITEM "&Help Topics",                ID_HELP_FINDER
+        MENUITEM SEPARATOR
+        MENUITEM "PATN Online",                 33032
+        MENUITEM "Discussion Forum",            33033
+        MENUITEM SEPARATOR
+        MENUITEM "&About PATN...",              ID_APP_ABOUT
+    END
+    POPUP "Selections"
+    BEGIN
+        MENUITEM "Clear",                       ID_SELECTIONS_CLEAR
+        POPUP "Selection 1"
+        BEGIN
+            MENUITEM "Activate",                    ID_SELECTION1_ACTIVATE
+            MENUITEM "Save Current Selection",      ID_SELECTION1_SAVECURRENTSELECTION
+
+        END
+        POPUP "Seleciton 2"
+        BEGIN
+            MENUITEM "Activate",                    ID_SELECTION2_ACTIVATE
+            MENUITEM "Save Current Selection",      ID_SELECTION2_SAVECURRENTSELECTION
+
+        END
+        POPUP "Selection 3"
+        BEGIN
+            MENUITEM "Activate",                    ID_SELECTION3_ACTIVATE
+            MENUITEM "Save Current Selection",      ID_SELECTION3_SAVECURRENTSELECTION
+
+        END
+        POPUP "Selection 4"
+        BEGIN
+            MENUITEM "Activate",                    ID_SELECTION4_ACTIVATE
+            MENUITEM "Save Current Selection",      ID_SELECTION4_SAVECURRENTSELECTION
+
+        END
+        POPUP "Selection 5"
+        BEGIN
+            MENUITEM "Activate",                    ID_SELECTION5_ACTIVATE
+            MENUITEM "Save Current Selection",      ID_SELECTION5_SAVECURRENTSELECTION
+
+        END
+        POPUP "Selection 6"
+        BEGIN
+            MENUITEM "Activate",                    ID_SELECTION6_ACTIVATE
+            MENUITEM "Save Current Selection",      ID_SELECTION6_SAVECURRENTSELECTION
+
+        END
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Accelerator
+//
+
+IDR_MAINFRAME ACCELERATORS 
+BEGIN
+    "C",            ID__DISPLAYCENTROIDS,   VIRTKEY, NOINVERT
+    "L",            ID__DISPLAYLABELS,      VIRTKEY, NOINVERT
+    "D",            ID__DISPLAYLEGEND,      VIRTKEY, NOINVERT
+    "M",            ID__DISPLAYMST,         VIRTKEY, NOINVERT
+    "=",            ID__PLUSROTATIONSPEED,  ASCII,  NOINVERT
+    VK_ADD,         ID__PLUSROTATIONSPEED,  VIRTKEY, NOINVERT
+    VK_SPACE,       ID__ROTATE,             VIRTKEY, NOINVERT
+    "G",            ID__SHOWGROUPING,       VIRTKEY, NOINVERT
+    "R",            ID__SHOWRANGES,         VIRTKEY, NOINVERT
+    "O",            ID__SHOWSELECTEDONLY,   VIRTKEY, NOINVERT
+    "B",            ID__USEBLACKWHITESYMBOLS, VIRTKEY, NOINVERT
+    "U",            ID__USEUSERGROUPCOLOURS, VIRTKEY, NOINVERT
+    "U",            ID__USEUSERGROUPCOLOURS, VIRTKEY, SHIFT, CONTROL, 
+                                                    NOINVERT
+    VK_ESCAPE,      ID_CANCEL_EDIT_CNTR,    VIRTKEY, NOINVERT
+    VK_F1,          ID_CONTEXT_HELP,        VIRTKEY, SHIFT, NOINVERT
+    "C",            ID_EDIT_COPY,           VIRTKEY, CONTROL, NOINVERT
+    VK_INSERT,      ID_EDIT_COPY,           VIRTKEY, CONTROL, NOINVERT
+    VK_DELETE,      ID_EDIT_CUT,            VIRTKEY, SHIFT, NOINVERT
+    "X",            ID_EDIT_CUT,            VIRTKEY, CONTROL, NOINVERT
+    "V",            ID_EDIT_PASTE,          VIRTKEY, CONTROL, NOINVERT
+    VK_INSERT,      ID_EDIT_PASTE,          VIRTKEY, SHIFT, NOINVERT
+    VK_BACK,        ID_EDIT_UNDO,           VIRTKEY, ALT, NOINVERT
+    "Z",            ID_EDIT_UNDO,           VIRTKEY, CONTROL, NOINVERT
+    "I",            ID_FILE_IMPORT,         VIRTKEY, CONTROL, NOINVERT
+    "N",            ID_FILE_NEW,            VIRTKEY, CONTROL, NOINVERT
+    "O",            ID_FILE_OPEN,           VIRTKEY, CONTROL, NOINVERT
+    "P",            ID_FILE_PRINT,          VIRTKEY, CONTROL, NOINVERT
+    "S",            ID_FILE_SAVE,           VIRTKEY, CONTROL, NOINVERT
+    VK_F1,          ID_HELP,                VIRTKEY, NOINVERT
+    VK_F6,          ID_NEXT_PANE,           VIRTKEY, NOINVERT
+    VK_F6,          ID_PREV_PANE,           VIRTKEY, SHIFT, NOINVERT
+    VK_CAPITAL,     ID_TOGGLEROTATE,        VIRTKEY, NOINVERT
+    "W",            ID_TOOLS_WIZARD,        VIRTKEY, CONTROL, NOINVERT
+    "P",            ID__PICKACOLUMN,        VIRTKEY, NOINVERT
+END
+
+IDR_TABLETYPE_CNTR_IP ACCELERATORS 
+BEGIN
+    "N",            ID_FILE_NEW,            VIRTKEY, CONTROL
+    "O",            ID_FILE_OPEN,           VIRTKEY, CONTROL
+    "S",            ID_FILE_SAVE,           VIRTKEY, CONTROL
+    "P",            ID_FILE_PRINT,          VIRTKEY, CONTROL
+    VK_F6,          ID_NEXT_PANE,           VIRTKEY 
+    VK_F6,          ID_PREV_PANE,           VIRTKEY, SHIFT
+    VK_F1,          ID_CONTEXT_HELP,        VIRTKEY, SHIFT
+    VK_F1,          ID_HELP,                VIRTKEY 
+    VK_ESCAPE,      ID_CANCEL_EDIT_CNTR,    VIRTKEY, NOINVERT
+END
+
+IDR_TABLETYPE_SRVR_IP ACCELERATORS 
+BEGIN
+    "Z",            ID_EDIT_UNDO,           VIRTKEY, CONTROL
+    "X",            ID_EDIT_CUT,            VIRTKEY, CONTROL
+    "C",            ID_EDIT_COPY,           VIRTKEY, CONTROL
+    "V",            ID_EDIT_PASTE,          VIRTKEY, CONTROL
+    VK_BACK,        ID_EDIT_UNDO,           VIRTKEY, ALT
+    VK_DELETE,      ID_EDIT_CUT,            VIRTKEY, SHIFT
+    VK_INSERT,      ID_EDIT_COPY,           VIRTKEY, CONTROL
+    VK_INSERT,      ID_EDIT_PASTE,          VIRTKEY, SHIFT
+    VK_F1,          ID_CONTEXT_HELP,        VIRTKEY, SHIFT
+    VK_F1,          ID_HELP,                VIRTKEY 
+    VK_ESCAPE,      ID_CANCEL_EDIT_SRVR,    VIRTKEY, NOINVERT
+END
+
+IDR_TABLETYPE_SRVR_EMB ACCELERATORS 
+BEGIN
+    "N",            ID_FILE_NEW,            VIRTKEY, CONTROL
+    "O",            ID_FILE_OPEN,           VIRTKEY, CONTROL
+    "S",            ID_FILE_UPDATE,         VIRTKEY, CONTROL
+    "P",            ID_FILE_PRINT,          VIRTKEY, CONTROL
+    "Z",            ID_EDIT_UNDO,           VIRTKEY, CONTROL
+    "X",            ID_EDIT_CUT,            VIRTKEY, CONTROL
+    "C",            ID_EDIT_COPY,           VIRTKEY, CONTROL
+    "V",            ID_EDIT_PASTE,          VIRTKEY, CONTROL
+    VK_BACK,        ID_EDIT_UNDO,           VIRTKEY, ALT
+    VK_DELETE,      ID_EDIT_CUT,            VIRTKEY, SHIFT
+    VK_INSERT,      ID_EDIT_COPY,           VIRTKEY, CONTROL
+    VK_INSERT,      ID_EDIT_PASTE,          VIRTKEY, SHIFT
+    VK_F6,          ID_NEXT_PANE,           VIRTKEY 
+    VK_F6,          ID_PREV_PANE,           VIRTKEY, SHIFT
+    VK_F1,          ID_CONTEXT_HELP,        VIRTKEY, SHIFT
+    VK_F1,          ID_HELP,                VIRTKEY 
+    VK_ESCAPE,      ID_CANCEL_EDIT_CNTR,    VIRTKEY, NOINVERT
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ABOUTBOX DIALOGEX 0, 0, 271, 241
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "About PATN"
+FONT 8, "MS Sans Serif", 0, 0, 0x1
+BEGIN
+    ICON            IDR_MAINFRAME,IDC_STATIC,11,7,20,20
+    LTEXT           "PATN SET_AT_RUNTIME",IDC_VERSION,40,7,132,8,SS_NOPREFIX
+    LTEXT           "Copyright © 2001 - 2009 \r\nBlatant Fabrications Pty Ltd",
+                    IDC_STATIC,39,32,132,26
+    DEFPUSHBUTTON   "OK",IDOK,217,6,47,15,WS_GROUP
+    LTEXT           "SET_AT_RUNTIME",IDC_LONGDATE,39,17,137,8
+    LTEXT           "",IDC_DISTRIBUTION,39,64,203,8
+    EDITTEXT        IDC_ABOUT_TEXT,10,96,254,140,ES_MULTILINE | 
+                    ES_AUTOVSCROLL | ES_AUTOHSCROLL | ES_READONLY | NOT 
+                    WS_BORDER | WS_VSCROLL,WS_EX_STATICEDGE
+    LTEXT           "",IDC_DISTRIBUTION_ORG,39,74,203,8
+END
+
+IDD_ODBC_CON_VALUES DIALOG  0, 0, 190, 123
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "ODBC Connection"
+FONT 8, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,133,7,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,133,24,50,14
+    LTEXT           "DSN",IDC_STATIC,18,17,16,8
+    LTEXT           "column label",IDC_STATIC,7,33,43,8
+    LTEXT           "row label",IDC_STATIC,13,46,31,8
+    LTEXT           "data",IDC_STATIC,17,62,15,8
+    EDITTEXT        IDC_DSN,52,16,61,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_COL_LABEL_FIELD,52,30,61,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_ROW_LABEL_FIELD,52,44,62,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_DATA_FIELD,52,59,62,12,ES_AUTOHSCROLL
+    LTEXT           "Table name",IDC_STATIC,7,75,39,8
+    EDITTEXT        IDC_TABLE_NAME,52,73,62,12,ES_AUTOHSCROLL
+END
+
+IDD_KWOPTIONS DIALOGEX 0, 0, 289, 154
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Kruskal-Wallis Statistic View Options"
+FONT 8, "MS Sans Serif", 0, 0, 0x0
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,229,113,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,229,132,50,14
+    EDITTEXT        IDC_NUMVISIBLE,213,32,40,15,ES_AUTOHSCROLL
+    CONTROL         "Spin1",IDC_NUMVISIBLESPIN,"msctls_updown32",
+                    UDS_SETBUDDYINT | UDS_AUTOBUDDY | UDS_ARROWKEYS | 
+                    UDS_NOTHOUSANDS,268,32,11,15
+    CONTROL         "Columns",IDC_RADIO1,"Button",BS_AUTORADIOBUTTON,6,20,43,
+                    10
+    CONTROL         "By Cutoff",IDC_RADIO2,"Button",BS_AUTORADIOBUTTON,211,
+                    55,45,10
+    CONTROL         "Best",IDC_RADIO3,"Button",BS_AUTORADIOBUTTON,212,19,30,
+                    10
+    EDITTEXT        IDC_CUTOFF,213,68,40,15,ES_AUTOHSCROLL
+    LISTBOX         IDC_COLUMNS,6,33,188,112,LBS_NOINTEGRALHEIGHT | 
+                    LBS_EXTENDEDSEL | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "View in 3DGraph and Scatterplot:",IDC_STATIC,6,6,106,8
+END
+
+IDD_NEWDIALOG DIALOGEX 0, 0, 224, 73
+STYLE DS_SETFONT | DS_MODALFRAME | DS_NOFAILCREATE | WS_POPUP | WS_VISIBLE | 
+    WS_CAPTION | WS_SYSMENU
+CAPTION "Progress"
+FONT 8, "MS Sans Serif", 0, 0, 0x0
+BEGIN
+    CONTROL         "Progress1",IDC_PROGRESS,"msctls_progress32",0x1,7,22,
+                    210,14
+    EDITTEXT        IDC_LABEL,7,7,210,14,ES_AUTOHSCROLL | ES_READONLY | NOT 
+                    WS_BORDER
+    DEFPUSHBUTTON   "Cancel",IDC_CANCEL,87,52,50,14
+END
+
+IDD_EVALUATION DIALOG  0, 0, 192, 46
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Evaluation"
+FONT 8, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "Run",IDOK,135,7,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,135,25,50,14
+    PUSHBUTTON      "Set Parameters",IDC_SETPARMS,7,14,116,14
+END
+
+IDD_EVALUATIONRECIPE DIALOG  0, 0, 338, 238
+STYLE DS_SETFONT | WS_POPUP | WS_CAPTION | WS_SYSMENU | WS_THICKFRAME
+CAPTION "Evaluation Recipe"
+FONT 8, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,113,217,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,171,217,50,14
+    EDITTEXT        IDC_ANALYSIS_LAYOUT,7,29,324,182,ES_MULTILINE | 
+                    ES_READONLY | WS_VSCROLL | WS_HSCROLL
+    LTEXT           "You have selected to perform the following evaluation:",
+                    IDC_STATIC,9,9,214,14
+    PUSHBUTTON      "Save Recipe",IDC_SAVERECIPE,7,217,49,14
+END
+
+IDD_PCCMCAO_PAGE DIALOGEX 0, 0, 426, 142
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "PCC / MCAO"
+FONT 8, "MS Sans Serif", 0, 0, 0x0
+BEGIN
+    PUSHBUTTON      "Add >",IDC_ADD,130,52,56,14
+    PUSHBUTTON      "Add All >>",IDC_ADD_ALL,130,71,56,14
+    PUSHBUTTON      "< Remove",IDC_REMOVE,130,90,56,14
+    PUSHBUTTON      "<< Remove All",IDC_REMOVE_ALL,130,110,56,14
+    GROUPBOX        "Select Column/s for Fit variables to ordination:",
+                    IDC_STATIC,3,35,301,98
+    LISTBOX         IDC_SELECTEDCOLS,193,52,105,73,LBS_NOINTEGRALHEIGHT | 
+                    LBS_EXTENDEDSEL | LBS_DISABLENOSCROLL | WS_VSCROLL | 
+                    WS_TABSTOP
+    LISTBOX         IDC_ALLCOLS,8,52,115,72,LBS_NOINTEGRALHEIGHT | 
+                    LBS_EXTENDEDSEL | LBS_DISABLENOSCROLL | WS_VSCROLL | 
+                    WS_TABSTOP
+    CONTROL         "Fit variables to ordination (PCC)",IDC_PCC,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,10,18,114,10
+    EDITTEXT        IDC_MCAO_ITERATIONS,376,49,40,14,ES_AUTOHSCROLL
+    LTEXT           "No. of iterations:",IDC_STATIC,320,52,52,8
+    EDITTEXT        IDC_MCAO_SEED,376,72,40,14,ES_AUTOHSCROLL
+    LTEXT           "Seed:",IDC_STATIC,354,74,20,8
+    CONTROL         "Permutation test on variables in ordination coordinates (MCAO)",
+                    IDC_MCAO,"Button",BS_AUTOCHECKBOX | BS_MULTILINE | 
+                    WS_TABSTOP,324,14,88,31
+    GROUPBOX        "",IDC_STATIC,316,7,107,127
+    GROUPBOX        "",IDC_STATIC,3,7,302,127
+END
+
+IDD_KW_PAGE DIALOGEX 0, 0, 312, 153
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Box & Whisker"
+FONT 8, "MS Sans Serif", 0, 0, 0x0
+BEGIN
+    CONTROL         "Generate Box & Whisker plots for the following variables",
+                    IDC_KW,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,53,7,187,10
+    LISTBOX         IDC_ALL,13,66,108,73,LBS_NOINTEGRALHEIGHT | 
+                    LBS_EXTENDEDSEL | LBS_DISABLENOSCROLL | WS_VSCROLL | 
+                    WS_TABSTOP
+    PUSHBUTTON      "Add >",IDC_ADD,127,68,56,14
+    PUSHBUTTON      "Add All >>",IDC_ADD_ALL,127,87,56,14
+    PUSHBUTTON      "< Remove",IDC_REMOVE,127,106,56,14
+    PUSHBUTTON      "<< Remove All",IDC_REMOVE_ALL,127,125,56,14
+    LISTBOX         IDC_SELECTED,187,66,110,73,LBS_NOINTEGRALHEIGHT | 
+                    LBS_EXTENDEDSEL | LBS_DISABLENOSCROLL | WS_VSCROLL | 
+                    WS_TABSTOP
+    GROUPBOX        "Select Variables to Operate on:",IDC_STATIC,6,51,299,97
+    CONTROL         "PATN generated groups",IDC_PATNGENERATEDGROUPS,"Button",
+                    BS_AUTORADIOBUTTON | WS_GROUP,53,22,93,10
+    CONTROL         "a-priori groups",IDC_APRIORIGROUPS,"Button",
+                    BS_AUTORADIOBUTTON,53,35,60,10
+END
+
+IDD_ANOSIM_PAGE DIALOGEX 0, 0, 312, 161
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "ANOSIM"
+FONT 8, "MS Sans Serif", 0, 0, 0x0
+BEGIN
+    EDITTEXT        IDC_ROW_ITERATIONS,75,57,39,14,ES_AUTOHSCROLL | 
+                    ES_NUMBER
+    LTEXT           "No. of iterations:",IDC_STATIC,19,59,52,8
+    LTEXT           "Seed:",IDC_STATIC,51,77,20,8
+    EDITTEXT        IDC_ROW_SEED,75,75,40,14,ES_AUTOHSCROLL
+    GROUPBOX        "",IDC_STATIC,13,6,139,147
+    CONTROL         "ANOSIM on Rows",IDC_ROWS,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,20,16,74,10
+    EDITTEXT        IDC_COLUMN_ITERATIONS,223,56,39,14,ES_AUTOHSCROLL | 
+                    ES_NUMBER
+    LTEXT           "No. of iterations:",IDC_STATIC,167,58,52,8
+    LTEXT           "Seed:",IDC_STATIC,199,76,20,8
+    EDITTEXT        IDC_COLUMN_SEED,223,74,40,14,ES_AUTOHSCROLL
+    GROUPBOX        "",IDC_STATIC,159,6,139,147
+    CONTROL         "ANOSIM on Columns",IDC_COLUMNS,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,167,16,83,10
+    PUSHBUTTON      "Set Group Members",IDC_SETROWGROUPS,42,134,76,15
+    CONTROL         "Comparison between all groups",IDC_ROWALLGROUPS,"Button",
+                    BS_AUTORADIOBUTTON | WS_GROUP,19,100,114,10
+    CONTROL         "Pair-wise comparison between groups",IDC_ROWPAIRGROUPS,
+                    "Button",BS_AUTORADIOBUTTON,19,113,131,10
+    PUSHBUTTON      "Set Group Members",IDC_SETCOLGROUPS,187,134,76,15
+    CONTROL         "Comparison between all groups",IDC_COLALLGROUPS,"Button",
+                    BS_AUTORADIOBUTTON | WS_GROUP,164,99,114,10
+    CONTROL         "Pair-wise comparison between groups",IDC_COLPAIRGROUPS,
+                    "Button",BS_AUTORADIOBUTTON,164,113,132,10
+    CONTROL         "PATN generated groups",IDC_PATNGENERATEDGROUPS,"Button",
+                    BS_AUTORADIOBUTTON | WS_GROUP,20,31,93,10
+    CONTROL         "a-priori groups",IDC_APRIORIGROUPS,"Button",
+                    BS_AUTORADIOBUTTON,20,43,60,10
+END
+
+IDD_KWRESULTS DIALOGEX 0, 0, 284, 186
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Kruskal-Wallis Statistic Results"
+FONT 8, "MS Sans Serif", 0, 0, 0x0
+BEGIN
+    PUSHBUTTON      "Close",IDCANCEL,223,162,50,14
+    LISTBOX         IDC_COLUMNS,6,7,181,172,LBS_NOINTEGRALHEIGHT | LBS_NOSEL | 
+                    WS_VSCROLL | WS_TABSTOP
+    CONTROL         "Sort by Table Order",IDC_ORDERTABLE,"Button",
+                    BS_AUTORADIOBUTTON,196,12,77,10
+    CONTROL         "Sort by value",IDC_ORDERVALUE,"Button",
+                    BS_AUTORADIOBUTTON,197,26,57,10
+END
+
+IDD_MCAORESULTS DIALOGEX 0, 0, 261, 186
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Permutation test on variables in ord coords Results"
+FONT 8, "MS Sans Serif", 0, 0, 0x0
+BEGIN
+    PUSHBUTTON      "Close",IDCANCEL,201,164,50,14
+    LISTBOX         IDC_COLUMNS,6,27,187,152,LBS_NOINTEGRALHEIGHT | 
+                    LBS_NOSEL | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "Percentage of permutated Rsquared values that exceed the actual Rsquared value for each attribute:",
+                    IDC_STATIC,6,7,195,18
+END
+
+IDD_SELECTOPTIONS DIALOG  0, 0, 268, 122
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Selection Options  (Intrinsics Only)"
+FONT 8, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,64,101,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,147,101,50,14
+    CONTROL         "Rows",IDC_ROWS,"Button",BS_AUTORADIOBUTTON | WS_GROUP,
+                    13,21,34,10
+    CONTROL         "Columns",IDC_COLUMNS,"Button",BS_AUTORADIOBUTTON,13,34,
+                    43,10
+    CONTROL         "Sum",IDC_SUM,"Button",BS_AUTORADIOBUTTON | WS_GROUP,82,
+                    23,30,10
+    CONTROL         "Minimum",IDC_RADIO4,"Button",BS_AUTORADIOBUTTON,82,33,
+                    43,10
+    CONTROL         "Mean",IDC_MEAN,"Button",BS_AUTORADIOBUTTON,82,44,34,10
+    CONTROL         "Maximum",IDC_MAXIMUM,"Button",BS_AUTORADIOBUTTON,82,55,
+                    45,10
+    CONTROL         "Number > 0",IDC_RADIO7,"Button",BS_AUTORADIOBUTTON,82,
+                    66,53,10
+    CONTROL         "Number of Missing Values",IDC_RADIO8,"Button",
+                    BS_AUTORADIOBUTTON,82,76,97,10
+    CONTROL         "Less than",IDC_LESS,"Button",BS_AUTORADIOBUTTON | 
+                    WS_GROUP,197,19,47,10
+    CONTROL         "Greater than",IDC_GREATER,"Button",BS_AUTORADIOBUTTON,
+                    197,30,55,10
+    EDITTEXT        IDC_VALUE,196,64,55,14,ES_AUTOHSCROLL
+    GROUPBOX        "Variable Condition",IDC_STATIC,189,7,72,89
+    CONTROL         "Equal to",IDC_EQUAL,"Button",BS_AUTORADIOBUTTON,197,41,
+                    42,10
+    GROUPBOX        "Select",IDC_STATIC,7,7,64,46
+    GROUPBOX        "Selection Variable",IDC_STATIC,74,7,112,89
+END
+
+IDD_KWTHREASHOLD DIALOGEX 0, 0, 349, 270
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Dialog"
+FONT 8, "MS Sans Serif", 0, 0, 0x0
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,292,228,50,16
+    PUSHBUTTON      "Cancel",IDCANCEL,292,247,50,16
+    EDITTEXT        IDC_EDIT1,200,249,69,14,ES_AUTOHSCROLL
+    LTEXT           "Move intrinsic columns to extrinsics when KW < threashold:",
+                    IDC_STATIC,7,251,187,8
+    LISTBOX         IDC_COLUMNS,7,21,214,211,LBS_NOINTEGRALHEIGHT | 
+                    LBS_NOSEL | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "KW values for intrinsics",IDC_STATIC,7,7,74,8
+END
+
+IDD_CONSTANCY_FIDELITY DIALOGEX 0, 0, 196, 65
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Consistency and Fidelity"
+FONT 8, "MS Sans Serif", 0, 0, 0x0
+BEGIN
+    LISTBOX         IDC_SELECTED,170,18,13,9,LBS_NOINTEGRALHEIGHT | 
+                    LBS_EXTENDEDSEL | LBS_DISABLENOSCROLL | NOT WS_VISIBLE | 
+                    WS_VSCROLL | WS_TABSTOP
+    PUSHBUTTON      "Cancel",IDC_CLOSE,139,45,50,14
+    CONTROL         "Use Apriori groups",IDC_CHECK1,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,10,9,73,10
+    CONTROL         "Order by Group",IDC_CHECK4,"Button",BS_AUTOCHECKBOX | 
+                    NOT WS_VISIBLE | WS_TABSTOP,154,10,8,10
+    LTEXT           "Consistency (%), Fidelity (%), Group #, Column #, Variable Name",
+                    IDC_STATIC,172,7,12,8,NOT WS_VISIBLE
+    PUSHBUTTON      "OK",IDC_OK,139,27,50,14
+    LTEXT           "Cutoff Threashold",IDC_STATIC,11,31,57,8
+    EDITTEXT        IDC_EDIT1,77,28,40,14,ES_AUTOHSCROLL
+END
+
+IDD_DIALOG2 DIALOGEX 0, 0, 186, 46
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | 
+    WS_SYSMENU
+CAPTION "Selection Name"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,129,7,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,129,24,50,14
+    EDITTEXT        IDC_EDIT1,7,13,111,16,ES_AUTOHSCROLL
+END
+
+IDD_COL_COLOURS DIALOGEX 0, 0, 342, 291
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Select a column to base colours on"
+FONT 8, "MS Sans Serif", 0, 0, 0x0
+BEGIN
+    LISTBOX         IDC_ALL,13,29,205,251,LBS_NOINTEGRALHEIGHT | 
+                    LBS_EXTENDEDSEL | LBS_DISABLENOSCROLL | WS_VSCROLL | 
+                    WS_TABSTOP
+    LTEXT           "Select a column (min, max, column name)",IDC_STATIC,13,
+                    11,131,8
+    PUSHBUTTON      "Change Start Colour",IDC_BUTTON1,251,31,80,14,NOT 
+                    WS_VISIBLE
+    PUSHBUTTON      "Change End Colour",IDC_BUTTON4,251,49,80,14,NOT 
+                    WS_VISIBLE
+    LISTBOX         IDC_LIST1,241,89,90,106,LBS_NOINTEGRALHEIGHT | 
+                    WS_VSCROLL | WS_TABSTOP
+    LTEXT           "Colour presets",IDC_STATIC,241,77,46,8
+    CONTROL         "Log scale",IDC_CHECK1,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,243,210,47,10
+    EDITTEXT        IDC_EDIT1,237,32,12,14,ES_AUTOHSCROLL | NOT WS_VISIBLE | 
+                    NOT WS_BORDER,WS_EX_TRANSPARENT
+    EDITTEXT        IDC_EDIT5,238,50,12,14,ES_AUTOHSCROLL | NOT WS_VISIBLE | 
+                    NOT WS_BORDER,WS_EX_TRANSPARENT
+    PUSHBUTTON      "OK",IDC_BUTTON2,281,250,50,14
+    PUSHBUTTON      "Cancel",IDC_BUTTON5,281,268,50,14
+END
+
+IDD_DIALOG3 DIALOGEX 0, 0, 257, 70
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | 
+    WS_SYSMENU
+CAPTION "Import relational data"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,200,7,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,200,24,50,14
+    COMBOBOX        IDC_COMBO1,68,7,118,128,CBS_DROPDOWN | WS_VSCROLL | 
+                    WS_TABSTOP
+    COMBOBOX        IDC_COMBO2,68,25,117,158,CBS_DROPDOWN | WS_VSCROLL | 
+                    WS_TABSTOP
+    COMBOBOX        IDC_COMBO3,68,44,117,156,CBS_DROPDOWN | WS_VSCROLL | 
+                    WS_TABSTOP
+    LTEXT           "Columns",IDC_STATIC,7,7,28,8
+    LTEXT           "Rows",IDC_STATIC,7,26,18,8
+    LTEXT           "Data Value",IDC_STATIC,7,47,36,8
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 4,0,0,0
+ PRODUCTVERSION 4,0,0,0
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x40004L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "040904b0"
+        BEGIN
+            VALUE "CompanyName", "Blatant Fabrications Pty Ltd"
+            VALUE "FileDescription", "PATN"
+            VALUE "FileVersion", "4.00"
+            VALUE "InternalName", "PATN"
+            VALUE "LegalCopyright", "Copyright ©2000"
+            VALUE "OriginalFilename", "PATN.EXE"
+            VALUE "ProductName", "PATN"
+            VALUE "ProductVersion", "4.00"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x409, 1200
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO 
+BEGIN
+    IDD_ABOUTBOX, DIALOG
+    BEGIN
+        LEFTMARGIN, 10
+        RIGHTMARGIN, 264
+        BOTTOMMARGIN, 236
+        HORZGUIDE, 32
+    END
+
+    IDD_KWTHREASHOLD, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 342
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 263
+    END
+
+    IDD_CONSTANCY_FIDELITY, DIALOG
+    BEGIN
+        RIGHTMARGIN, 189
+        BOTTOMMARGIN, 58
+    END
+
+    IDD_DIALOG2, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 179
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 39
+    END
+
+    IDD_COL_COLOURS, DIALOG
+    BEGIN
+        RIGHTMARGIN, 331
+    END
+
+    IDD_DIALOG3, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 250
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 63
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE 
+BEGIN
+    IDP_OLE_INIT_FAILED     "OLE initialization failed.  Make sure that the OLE libraries are the correct version."
+    IDP_FAILED_TO_CREATE    "Failed to create object.  Make sure the object is entered in the system registry."
+    IDP_SOCKETS_INIT_FAILED "Windows sockets initialization failed."
+END
+
+STRINGTABLE 
+BEGIN
+    IDR_MAINFRAME           "PATN"
+    IDR_TABLETYPE           "\nTable\nPATN Project\nPATN Project\n.PTN\nPATN.Project\nPATN Project"
+    IDR_FUSETYPE            "\nFusion Details"
+    IDR_ASSOCTYPE           "\nAssociation Matrix"
+    IDR_HISTOGRAM           "\nHistogram"
+END
+
+STRINGTABLE 
+BEGIN
+    IDR_TWAYTABLE           "\nTway Table"
+    IDR_GSTAVIEW            "\nGsta View"
+    IDR_3DVIEW              "\n3D View"
+    IDR_SCAT                "\nScatter Plot"
+    IDR_ANOSIM              "\nAnosim View"
+END
+
+STRINGTABLE 
+BEGIN
+    IDR_BOXWHISKER          "\nBoxWhisker View"
+    IDR_SCATTERPLOT         "\nScatterplot"
+END
+
+STRINGTABLE 
+BEGIN
+    AFX_IDS_APP_TITLE       "PATN"
+    AFX_IDS_IDLEMESSAGE     "For Help, press F1"
+    AFX_IDS_HELPMODEMESSAGE "Select an object on which to get Help"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_INDICATOR_EXT        "EXT"
+    ID_INDICATOR_CAPS       "CAP"
+    ID_INDICATOR_NUM        "NUM"
+    ID_INDICATOR_SCRL       "SCRL"
+    ID_INDICATOR_OVR        "OVR"
+    ID_INDICATOR_REC        "REC"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_FILE_NEW             "Create a new PATN Project\nNew"
+    ID_FILE_OPEN            "Open an existing PATN Project\nOpen"
+    ID_FILE_CLOSE           "Close the active PATN Project\nClose"
+    ID_FILE_SAVE            "Save the active PATN Project\nSave"
+    ID_FILE_SAVE_AS         "Save the active PATN Project with a new name\nSave As"
+    ID_FILE_PAGE_SETUP      "Change the printing options\nPage Setup"
+    ID_FILE_PRINT_SETUP     "Change the printer and printing options\nPrint Setup"
+    ID_FILE_PRINT           "Print the active PATN Project\nPrint"
+    ID_FILE_PRINT_PREVIEW   "Display full pages\nPrint Preview"
+    ID_FILE_UPDATE          "Update the container to show any changes\nUpdate"
+    ID_FILE_SAVE_COPY_AS    "Save a copy of the active document with a new name\nSave Copy"
+    ID_FILE_SEND_MAIL       "Send the active PATN Project through electronic mail\nSend Mail"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_APP_ABOUT            "Display program information, version number and copyright\nAbout"
+    ID_APP_EXIT             "Quit the application; prompts to save PATN projects\nExit"
+    ID_HELP_INDEX           "Opens Help\nHelp Topics"
+    ID_HELP_FINDER          "List Help topics\nHelp Topics"
+    ID_HELP_USING           "Display instructions about how to use help\nHelp"
+    ID_CONTEXT_HELP         "Display help for clicked on buttons, menus and windows\nHelp"
+    ID_HELP                 "Display help for current task or command\nHelp"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_FILE_MRU_FILE1       "Open this PATN Project"
+    ID_FILE_MRU_FILE2       "Open this PATN Project"
+    ID_FILE_MRU_FILE3       "Open this PATN Project"
+    ID_FILE_MRU_FILE4       "Open this PATN Project"
+    ID_FILE_MRU_FILE5       "Open this PATN Project"
+    ID_FILE_MRU_FILE6       "Open this PATN Project"
+    ID_FILE_MRU_FILE7       "Open this PATN Project"
+    ID_FILE_MRU_FILE8       "Open this PATN Project"
+    ID_FILE_MRU_FILE9       "Open this PATN Project"
+    ID_FILE_MRU_FILE10      "Open this PATN Project"
+    ID_FILE_MRU_FILE11      "Open this PATN Project"
+    ID_FILE_MRU_FILE12      "Open this PATN Project"
+    ID_FILE_MRU_FILE13      "Open this PATN Project"
+    ID_FILE_MRU_FILE14      "Open this PATN Project"
+    ID_FILE_MRU_FILE15      "Open this PATN Project"
+    ID_FILE_MRU_FILE16      "Open this PATN Project"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_NEXT_PANE            "Switch to the next window pane\nNext Pane"
+    ID_PREV_PANE            "Switch back to the previous window pane\nPrevious Pane"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_WINDOW_NEW           "Open another window for the active PATN Project\nNew Window"
+    ID_WINDOW_ARRANGE       "Arrange icons at the bottom of the window\nArrange Icons"
+    ID_WINDOW_CASCADE       "Arrange windows so they overlap\nCascade Windows"
+    ID_WINDOW_TILE_HORZ     "Arrange windows as non-overlapping tiles\nTile Windows"
+    ID_WINDOW_TILE_VERT     "Arrange windows as non-overlapping tiles\nTile Windows"
+    ID_WINDOW_SPLIT         "Split the active window into panes\nSplit"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_EDIT_CLEAR           "Erase the selection\nErase"
+    ID_EDIT_CLEAR_ALL       "Erase everything\nErase All"
+    ID_EDIT_COPY            "Copy the selection and put it on the Clipboard\nCopy"
+    ID_EDIT_CUT             "Cut the selection and put it on the Clipboard\nCut"
+    ID_EDIT_FIND            "Find the specified text\nFind"
+    ID_EDIT_PASTE           "Insert Clipboard contents\nPaste"
+    ID_EDIT_PASTE_LINK      "Insert Clipboard contents and a link to its source\nPaste Link"
+    ID_EDIT_PASTE_SPECIAL   "Insert Clipboard contents with options\nPaste Special"
+    ID_EDIT_REPEAT          "Repeat the last action\nRepeat"
+    ID_EDIT_REPLACE         "Replace specific text with different text\nReplace"
+    ID_EDIT_SELECT_ALL      "Select the entire Data Table\nSelect All"
+    ID_EDIT_UNDO            "Undo the last action\nUndo"
+    ID_EDIT_REDO            "Redo the previously undone action\nRedo"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_VIEW_TOOLBAR         "Show or hide the toolbar\nToggle ToolBar"
+    ID_VIEW_STATUS_BAR      "Show or hide the status bar\nToggle StatusBar"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_OLE_INSERT_NEW       "Insert new embedded object\nNew Object"
+    ID_OLE_EDIT_LINKS       "Edit linked objects\nEdit Links"
+    ID_OLE_EDIT_CONVERT     "Convert object to different type\nConvert Object"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_OLE_VERB_FIRST       "Activate embedded or linked object"
+    57873                   "Activate embedded or linked object"
+    57874                   "Activate embedded or linked object"
+    57875                   "Activate embedded or linked object"
+END
+
+STRINGTABLE 
+BEGIN
+    AFX_IDS_SCSIZE          "Change the window size"
+    AFX_IDS_SCMOVE          "Change the window position"
+    AFX_IDS_SCMINIMIZE      "Reduce the window to an icon"
+    AFX_IDS_SCMAXIMIZE      "Enlarge the window to full size"
+    AFX_IDS_SCNEXTWINDOW    "Switch to the next active window"
+    AFX_IDS_SCPREVWINDOW    "Switch to the previous active window"
+    AFX_IDS_SCCLOSE         "Close the active window and prompts to save the PATN Project"
+END
+
+STRINGTABLE 
+BEGIN
+    AFX_IDS_SCRESTORE       "Restore the window to normal size"
+    AFX_IDS_SCTASKLIST      "Activate Task List"
+    AFX_IDS_MDICHILD        "Activate this window"
+END
+
+STRINGTABLE 
+BEGIN
+    AFX_IDS_PREVIEW_CLOSE   "Close print preview mode\nCancel Preview"
+    ASSOC_GOWER_METRIC      "Gower Metric"
+    ASSOC_MINKOWSKI_SERIES  "Minkowski Series"
+    ASSOC_TWO_STEP          "Two-step"
+    ASSOC_KULZINSKI         "Kulczynski"
+    CLASS_FUSE              "Agglomerative Hierarchical Fusion"
+    CLASS_ALLOC             "Non-hierarchical Clustering"
+    FUSE_NEAREST_NEIGHBOUR  "Nearest Neighbour"
+    FUSE_FURTHEST_NEIGHBOUR "Furthest Neighbour"
+    FUSE_FLEXIBLE_WPGMA     "Flexible WPGMA"
+END
+
+STRINGTABLE 
+BEGIN
+    ASSOC_BRAY_CURTIS       "Bray Curtis"
+    ID_VIEW_SCATTERPLOT33034 
+                            "Displays a scatter plot of two rows or two columns\nScatterplot"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_TABLE_ROW_INSERT     "Insert new row(s)\nInsert row(s)"
+    ID_TABLE_ROW_DELETE     "Delete row(s)\nDelete row(s)"
+    ID_TABLE_ROW_MAKEEXTRINSIC 
+                            "Make row(s) extrinsic (exclude from analysis)\nMake row(s) extrinsic (exclude from analysis)"
+    ID_TABLE_ROW_MAKEINTRINSIC 
+                            "Make row(s) intrinsic (include in analysis)\nMake row(s) intrinsic (include in analysis)"
+    ID_TABLE_ROW_PROPERTIES "Change properties of row(s)\nChange properties"
+    ID_TABLE_COLUMN_INSERT  "Insert new column(s)\nInsert column(s)"
+    ID_TABLE_COLUMN_DELETE  "Delete column(s)\nDelete column(s)"
+    ID_TABLE_COLUMN_MAKEEXTRINSIC 
+                            "Make column(s) extrinsic (exclude from analysis)\nMake column(s) extrinsic (exclude from analysis)"
+    ID_TABLE_COLUMN_MAKEINTRINSIC 
+                            "Make column(s) intrinsic (include in analysis)\nMake column(s) intrinsic (include in analysis)"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_TABLE_COLUMN_PROPERTIES 
+                            "Change properties of column(s)\nChange properties"
+    ID_TABLE_ROW_ADD        "Add new row(s) to end of table\nAdd new row(s)"
+    ID_TABLE_COLUMN_ADD     "Add new column(s) to end of table\nAdd new column(s)"
+    ID_TABLE_PROPERTIES     "Change properties for entire table\nChange properties"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_TABLE_FONT           "Change the font used for the table\nChange font"
+    ID_FILE_IMPORT          "Create new table by importing data from an external source, eg, a database\nImport external data"
+    ID_TABLE_COLUMN_SELECT  "Column Selection Tool\nColumn selection tool"
+    ID_TABLE_ROW_SELECT     "Row Selection Tool\nRow selection tool"
+    ID_TABLE_COLUMN_HIDE    "Hide selected column/s from view\nHide selected column/s from view"
+    ID_TABLE_COLUMN_UNHIDE  "Unhide selected column/s\nUnhide selected column/s"
+    ID_TABLE_ROW_HIDE       "Hide selected row/s from view\nHide selected row/s from view"
+    ID_TABLE_ROW_UNHIDE     "Unhide selected row/s\nUnhide selected row/s"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_TABLE_COLUMN_GOTOEXTRINSICS 
+                            "Go to first of the extrinsic columns\nGoto extrinsic columns"
+    ID_TABLE_ROW_GOTOEXTRINSICS 
+                            "Go to first of the extrinsic rows\nGoto extrinsic rows"
+    ID_TOOLS_DATATRANSFORMATION 
+                            "Transformation options that operate on data in either columns or rows\nData Transformation"
+    ID_TOOLS_DATAANALYSIS   "Various data analysis operations\nData Analysis"
+    ID_TOOLS_HISTOGRAM      "Produces a histogram of data in selected rows or columns\nHistogram"
+    ID_VIEW_FUSIONDETAILS   "Displays fusion history & dendrogram for rows / columns\nDendrograms"
+    ID_VIEW_ASSOCIATIONMATRIX 
+                            "Displays association matrix and it's histogram for rows / columns\nAssociation"
+    ID_OPTIONS_FONT         "Allows change of association table font\nChange table font"
+END
+
+STRINGTABLE 
+BEGIN
+    FUSE_FLEXIBLE_UPGMA     "Flexible UPGMA"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_TOOLS_WIZARD         "Analysis wizard\nAnalysis Wizard"
+    ID_VIEW_HISTOGRAM       "Produces a histogram of data in selected rows or columns\nHistograms"
+    ID_VIEW_TWAYTABLE       "Displays a two-way table\nTwo-way table"
+    ID_FILE_LOAD_FUSIONTABLE "Import External Fusion Table"
+    ID_TABLE_ROW_GROUPS     "Tool for changing group allocations\nTool for changing group allocations"
+    ID_TABLE_COLUMN_GROUPS  "Tool for changing group allocations\nTool for changing group allocations"
+    ID_FILE_LOAD_COLUMNAFFINITYVECTOR 
+                            "Import column group composition from file\nImport column group composition from file"
+    ID_FILE_LOAD_ROWAFFINITYVECTOR 
+                            "Import row group composition from file\nImport row group composition from file"
+    ID_FILE_EXPORT_COLUMNAFFINITYVECTOR 
+                            "Export column group composition information\nExport column group composition"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_FILE_EXPORT_ROWAFFINITYVECTOR 
+                            "Export row group composition information\nExport row group composition"
+    ID_VIEW_GSTA            "Displays table of group means / presence absence ratio\nGroup Statistics"
+    ID_VIEW_3DGRAPH         "3D display of row objects and group statistics\n3d"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_VIEW_SCATTERPLOT     "Displays scatter plot of row objects\n2d"
+    ID_FONT_CHANGE          "Changes the table font between Times New Roman and Courier\nChange table Font"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_FILE_EXPORT_COLUMNASSOCIATIONMATRIX 
+                            "Export column association matrix\nExport column association matrix"
+    ID_FILE_EXPORT_ROWASSOCATIONMATRIX 
+                            "Export column association matrix\nExport column association matrix"
+    ID_FILE_EXPORT_COLUMNFUSIONTABLE 
+                            "Export Column Fusion table\nExport Column Fusion table"
+    ID_FILE_EXPORT_ROWFUSIONTABLE 
+                            "Export Row Fusion table\nExport Row Fusion table"
+    ID_FILE_EXPORT_ORDINATIONCOORDINATES 
+                            "Export Ordination Coordinates\nExport Ordination Coordinates"
+    ID_FILE_EXPORT_ROWANISMRESULTS 
+                            "Export Row ANOSIM results\nExport Row ANOSIM results"
+    ID_FILE_EXPORT_COLUMNANISMRESULTS 
+                            "Export Column ANOSIM results\nExport Column ANOSIM results"
+    ID_VIEW_ROWANISM        "Run ANOSIM on rows\nRow ANOSIM"
+    ID_VIEW_COLUMNANISM     "Run ANOSIM on columns\nColumn ANOSIM"
+    ID_FILE_APPEND          "Append excel file to righthandside of current dataset\nAppend Excel file"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_FILE_ODBCCONNECTION  "Import data from ODBC Connection\nImport data from ODBC Connection"
+    ID_FILE_EXPORT_PCCRESULTS 
+                            "Export results of variables fitted to ordination\nExport results of variables fitted to ordination"
+    ID_VIEW_ORDINATIONSTRESS "Ordination Stress\nOrdination Stress"
+    ID_FILE_EXPORT_TABLEANDINFOTABS 
+                            "Export table data with tab information as .csv\nExport table and tab data"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_FILE_LOAD_ORDINATION "Loads ordination coordinates from vector file.  May be 2D or 3D\nLoad Ordination Vectors"
+    ID_TABLE_PATTERNSOBJECTS 
+                            "Tool for assigning symbols to objects and/or groups for display in 3dGraph and Scatterplot UseBlack&WhiteSymbols\nTool  for assigning symbols"
+    ID_FILE_EXPORT_GROUPSTATISTICS 
+                            "Save group statistics for each attribute (column)\nSave group statistics"
+    ID_FILE_EXPORT_KRUSKALWALLICESTATS 
+                            "Export Kruskal-Wallis Statistic of variable-group results\nExport Kruskal-Wallis Statistic of variable-group results"
+    ID_VIEW_MCAO            "Permutation test on variables in ordination coordinates\nMCAO"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_FILE_EXPORT_MCAORAWDATA 
+                            "Export permutation test on variables in ordination coordinates data\nExport permutation test on variables in ordination coordinates data"
+    ID_TOOLS_DATAEVALUATION "Various evalutation operations on analysis results\nData Evaluation"
+    ID_VIEW_ANOSIMRESULTS   "ANOSIM results\nANOSIM"
+    ID_VIEW_KRUSKALWALLISRESULTS 
+                            "Kruskal-Wallis Statistic of variable-group\nKruskal-Wallis Statistic of variable-group"
+    ID_FILE_EXPORT_MCAORESULTS 
+                            "Export permutation test on variables in ordination coordinates results\nExport permutation test on variables in ordination coordinates results"
+    ID_VIEW_HISTORY         "Displays History of PATN Project\nRecipe"
+    ID_TABLE_TANSPOSEDATALABELS 
+                            "Transpose rows and columns\nTranspose rows and columns"
+    ID_FILE_EXPORT_ANOSIMGROUPPAIRRESULTS 
+                            "\nExport Anosim Group Pair results\nExport Anosim Group Pair results in association matrix form"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_FILE_EXPORT_ANOSIMGROUPPAIRAFFINITYVECTORS 
+                            "\nExport Anosim Group Pair group associations as group composition\nExport Anosim Group Pair group associations as group composition"
+    ID_EDIT_OTHERLABELSINCOPYCUT 
+                            "Include all row/column labels in Copy/Cut\nInclude all row and column labels in Cut and Copy operations"
+    ID_TABLE_SELECTIONOPTIONS 
+                            "Select Rows or Columns by specific criteria\nSelect Rows or Columns by specific criteria"
+    ID_VIEW_BOXWHISKERSTATISTICS 
+                            "Displays Groups Statistics in Box and Whisker Diagram\nBox-Whisker"
+END
+
+STRINGTABLE 
+BEGIN
+    IDR_3DXVIEW             "\n3DX View"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_VIEW_3DGRAPH_OPENGL  "Displays 3D graph of row objects at ordination coordinates\n3d"
+    ID_VIEW_3DGRAPH_DIRECTX70A 
+                            "Displays result of 2D/3D Ordination as a plot\nOrdination"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_CONTEXTMENU          "Displays the right mouse button menu\nMouse Menu"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_DATA_ROW_CONTROLGROUPS "Define control groups\nDefine control groups"
+END
+
+STRINGTABLE 
+BEGIN
+    33045                   "Delets all duplicate rows\nDeletes all duplicate rows"
+    ID_DATA_CREATENEWVARIABLESREPRESENTINGGROUPS 
+                            "Generate new variables constructed with group sums as extrinsics\nGenerate new variables constructed with group sums as extrinsics"
+END
+
+STRINGTABLE 
+BEGIN
+    IDR_CONSTFID            "\nConstFid View"
+END
+
+#endif    // English (U.S.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+/////////////////////////////////////////////////////////////////////////////
+// English (Australia) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENA)
+#ifdef _WIN32
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_AUS
+#pragma code_page(1252)
+#endif //_WIN32
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDI_STOP                ICON                    "RES\\STOP.ICO"
+IDI_BTN_OPEN            ICON                    "res\\btn_open.ico"
+IDI_BTN_NEW             ICON                    "res\\btn_new.ico"
+IDI_BTN_IMPORT          ICON                    "res\\btn_impo.ico"
+ARROW_RIGHT             ICON                    "RES\\ARROW_RI.ICO"
+IDI_BTN_WIZARD          ICON                    "res\\btn_wiza.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDB_STARTUP1            BITMAP                  "res\\startup1.bmp"
+IDB_SPLASH              BITMAP                  "res\\splash.bmp"
+IDR_VIEWTOOLBAR         BITMAP                  "res\\toolbar1.bmp"
+IDB_APPEND02            BITMAP                  "res\\append2.bmp"
+IDB_APPEND03            BITMAP                  "res\\append3.bmp"
+IDB_APPEND04            BITMAP                  "res\\append4.bmp"
+IDB_APPEND05            BITMAP                  "res\\bitmap1.bmp"
+IDB_APPEND06            BITMAP                  "res\\append6.bmp"
+IDB_APPEND07            BITMAP                  "res\\bmp00001.bmp"
+IDB_APPEND08            BITMAP                  "res\\append8.bmp"
+IDB_APPEND09            BITMAP                  "res\\append9.bmp"
+IDB_APPEND10            BITMAP                  "res\\append10.bmp"
+IDB_APPEND11            BITMAP                  "res\\bmp00002.bmp"
+IDB_APPEND12            BITMAP                  "res\\append12.bmp"
+IDB_APPEND13            BITMAP                  "res\\append13.bmp"
+IDB_APPEND14            BITMAP                  "res\\append14.bmp"
+IDB_INSTALLHELP         BITMAP                  "res\\InstallHelp.bmp"
+IDB_SPLASH1             BITMAP                  "res\\splash1.bmp"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Toolbar
+//
+
+IDR_VIEWTOOLBAR TOOLBAR  16, 15
+BEGIN
+    BUTTON      ID_SHOWTABLE
+    SEPARATOR
+    BUTTON      ID_VIEW_HISTOGRAM
+    BUTTON      ID_VIEW_SCATTERPLOT33034
+    SEPARATOR
+    BUTTON      ID_VIEW_ASSOCIATIONMATRIX
+    BUTTON      ID_VIEW_FUSIONDETAILS
+    BUTTON      ID_VIEW_TWAYTABLE
+    SEPARATOR
+    BUTTON      ID_VIEW_3DGRAPH_DIRECTX70A
+    SEPARATOR
+    BUTTON      ID_VIEW_ANOSIMRESULTS
+    BUTTON      ID_VIEW_BOXWHISKERSTATISTICS
+    BUTTON      ID_VIEW_CONSTFID
+    BUTTON      ID_VIEW_PCCRESULTS
+    BUTTON      ID_VIEW_MCAO
+    SEPARATOR
+    BUTTON      ID_VIEW_HISTORY
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDR_MENU_COLUMN MENU 
+BEGIN
+    POPUP ""
+    BEGIN
+        MENUITEM "&Hide",                       ID_TABLE_COLUMN_HIDE
+        MENUITEM "&Unhide",                     ID_TABLE_COLUMN_UNHIDE
+        MENUITEM SEPARATOR
+        MENUITEM "&Add",                        ID_TABLE_COLUMN_ADD
+        MENUITEM "&Insert",                     ID_TABLE_COLUMN_INSERT
+        MENUITEM "&Delete",                     ID_TABLE_COLUMN_DELETE
+        MENUITEM SEPARATOR
+        MENUITEM "Make &extrinsic",             ID_TABLE_COLUMN_MAKEEXTRINSIC
+
+        MENUITEM "Make i&ntrinsic",             ID_TABLE_COLUMN_MAKEINTRINSIC
+
+        MENUITEM SEPARATOR
+        MENUITEM "&Properties...",              ID_TABLE_COLUMN_PROPERTIES
+    END
+END
+
+IDR_MENU_ROW MENU 
+BEGIN
+    POPUP ""
+    BEGIN
+        MENUITEM "&Hide",                       ID_TABLE_ROW_HIDE
+        MENUITEM "&Unhide",                     ID_TABLE_ROW_UNHIDE
+        MENUITEM SEPARATOR
+        MENUITEM "&Add",                        ID_TABLE_ROW_ADD
+        MENUITEM "&Insert",                     ID_TABLE_ROW_INSERT
+        MENUITEM "&Delete",                     ID_TABLE_ROW_DELETE
+        MENUITEM SEPARATOR
+        MENUITEM "Make extrinsic",              ID_TABLE_ROW_MAKEEXTRINSIC
+        MENUITEM "Make intrinsic",              ID_TABLE_ROW_MAKEINTRINSIC
+        MENUITEM SEPARATOR
+        MENUITEM "&Properties...",              ID_TABLE_ROW_PROPERTIES
+    END
+END
+
+IDR_MENU_3DVIEW MENU 
+BEGIN
+    POPUP ""
+    BEGIN
+        MENUITEM "Rotate\tspace",               ID__ROTATE
+        MENUITEM "Speed up\t->",                ID__PLUSROTATIONSPEED
+        MENUITEM "Slow down\t<-",               ID__MINUSROTATIONSPEED
+        POPUP "Set rotation"
+        BEGIN
+            MENUITEM "Reset rotation",              ID__RESETROTATION
+            MENUITEM "View axies 1 and 2",          ID__SETROTATION_VIEWXY
+            MENUITEM "View axies 2 and 3",          ID__SETROTATION_VIEWYZ
+            MENUITEM "View axies 1 and 3",          ID__SETROTATION_VIEWXZ
+        END
+        MENUITEM SEPARATOR
+        MENUITEM "Display legend\td",           ID__DISPLAYLEGEND
+        MENUITEM "Display ranges\tr",           ID__SHOWRANGES
+        MENUITEM "Add text box...",             ID__ADDTEXTBOX
+        MENUITEM "Alter font...",               ID__FONT
+        MENUITEM "Alter object size...",        ID__OBJECTSIZE
+        POPUP "Object size"
+        BEGIN
+            MENUITEM "Increase \tPgUp",             ID_SYMBOLSIZE_INCREASEPGUP
+
+            MENUITEM "Decrease\tPgDn",              ID_SYMBOLSIZE_DECREASEPGDN
+
+        END
+        MENUITEM SEPARATOR
+        MENUITEM "Display labels\tl",           ID__DISPLAYLABELS
+        MENUITEM "Display B && W symbols \tb",  ID__USEBLACKWHITESYMBOLS
+        MENUITEM "Display selected \to",        ID__SHOWSELECTEDONLY
+        MENUITEM SEPARATOR
+        POPUP "Group centroid type"
+        BEGIN
+            MENUITEM "Analysis groups and centroids\tt", 
+                                                    ID_GROUP_ANALYSISGROUPSANDCENTROIDS
+            , CHECKED
+            MENUITEM "A priori groups and centroids\tt", 
+                                                    ID_GROUP_APRIORIGROUPSANDCENTROIDS
+
+        END
+        MENUITEM "Display centroid colours\tg", ID__SHOWGROUPING
+        MENUITEM "Display user colours\tu",     ID__USEUSERGROUPCOLOURS
+        MENUITEM "Colour by column...\tp",      ID__PICKACOLUMN
+        MENUITEM "Display group centroids\tc",  ID__DISPLAYCENTROIDS
+        MENUITEM SEPARATOR
+        MENUITEM "Display data variables...",   ID__SELECTPCCVECTORS
+        MENUITEM "Display MST\tm",              ID__DISPLAYMST
+        MENUITEM SEPARATOR
+        MENUITEM "Print preview",               ID__PRINTPREVIEW
+        MENUITEM "Print...",                    ID__PRINT
+        MENUITEM "Save image...",               ID__SAVEIMAGE
+        MENUITEM "Save video...",               ID__SAVEVIDEO
+        MENUITEM SEPARATOR
+        MENUITEM "Close",                       ID__CLOSE
+    END
+END
+
+IDR_MENU_DEND MENU 
+BEGIN
+    POPUP " "
+    BEGIN
+        MENUITEM "&Groups only",                ID__GROUPSONLY, CHECKED
+        MENUITEM SEPARATOR
+        MENUITEM "Labels",                      ID__LABELS, CHECKED
+        MENUITEM "B && W symbols",              ID__BWSYMBOLS
+        MENUITEM "Labels + symbols",            ID__LABELSSYMBOLS
+        MENUITEM "A priori groups",             ID__CONTROLINDICATOR
+        MENUITEM SEPARATOR
+        MENUITEM "&Font...",                    ID__FONT
+        MENUITEM "Print pre&view",              ID__PRINTPREVIEW
+        MENUITEM "&Print...",                   ID__PRINT
+        MENUITEM "&Save image...",              ID__SAVEIMAGE
+        MENUITEM SEPARATOR
+        MENUITEM "Close",                       ID__CLOSE
+    END
+END
+
+IDR_IMAGE MENU 
+BEGIN
+    POPUP " "
+    BEGIN
+        MENUITEM "&Font...",                    32886
+        MENUITEM "Print pre&view",              ID__PRINTPREVIEW
+        MENUITEM "&Print...",                   ID__PRINT
+        MENUITEM "&Save image...",              ID__SAVEIMAGE
+        MENUITEM SEPARATOR
+        MENUITEM "Close",                       ID__CLOSE
+    END
+END
+
+IDR_TABLE MENU 
+BEGIN
+    POPUP " "
+    BEGIN
+        MENUITEM "Font...",                     ID__FONT
+        MENUITEM "Print preview",               ID__PRINTPREVIEW
+        MENUITEM "Print...",                    ID__PRINT
+        MENUITEM "Save as...",                  ID__SAVEAS
+        MENUITEM SEPARATOR
+        MENUITEM "Close",                       ID__CLOSE
+    END
+END
+
+IDR_MENU_TWAY MENU 
+BEGIN
+    POPUP " "
+    BEGIN
+        MENUITEM "&Flip axes",                  ID__FLIPAXES
+        MENUITEM SEPARATOR
+        MENUITEM "Font...",                     ID__FONT
+        MENUITEM "Print pre&view",              ID__PRINTPREVIEW
+        MENUITEM "&Print...",                   ID__PRINT
+        MENUITEM "&Save image...",              ID__SAVEIMAGE
+        MENUITEM SEPARATOR
+        MENUITEM "Close",                       ID__CLOSE
+    END
+END
+
+IDR_TABLEANOSIM MENU 
+BEGIN
+    POPUP " "
+    BEGIN
+        MENUITEM "Font...",                     ID__FONT
+        MENUITEM "Print preview",               ID__PRINTPREVIEW
+        MENUITEM "Print...",                    ID__PRINT
+        MENUITEM "Save as...",                  ID__EXPORT
+        MENUITEM SEPARATOR
+        MENUITEM "Real f-ratio",                ID__SAVE
+        MENUITEM "Best f-ratio",                ID__BEST, CHECKED
+        MENUITEM "% Best > Real",               ID__STAT
+        MENUITEM SEPARATOR
+        MENUITEM "Close",                       ID__CLOSE
+    END
+END
+
+IDR_BW MENU 
+BEGIN
+    POPUP " "
+    BEGIN
+        MENUITEM "Sort alphabetically",         ID__SORTALPHABETICALLY
+        , CHECKED
+        MENUITEM "Sort by table order",         ID__SORTBYTABLEORDER
+        MENUITEM "Sort by Kruskal-Wallis",      ID__SORTBYKRUSKALWALLIS
+        MENUITEM SEPARATOR
+        MENUITEM "Font...",                     ID__FONT
+        MENUITEM "Print pre&view",              ID__PRINTPREVIEW
+        MENUITEM "&Print...",                   ID__PRINT
+        MENUITEM "&Save image...",              ID__SAVEIMAGE
+        MENUITEM SEPARATOR
+        MENUITEM "Close",                       ID__CLOSE
+    END
+END
+
+IDR_SCATTPLOT MENU 
+BEGIN
+    POPUP " "
+    BEGIN
+        MENUITEM "Increase object size\tPgUp",  ID__INCREASESIZE
+        MENUITEM "Decrease object size\tPgDn",  ID__DECREASESYMBOLSIZE
+        MENUITEM SEPARATOR
+        MENUITEM "Font...",                     ID__FONT
+        MENUITEM "Print pre&view",              ID__PRINTPREVIEW
+        MENUITEM "&Print...",                   ID__PRINT
+        MENUITEM "&Save image...",              ID__SAVEIMAGE
+        MENUITEM SEPARATOR
+        MENUITEM "Close",                       ID__CLOSE
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_PAGE_NEW_TABLE_OPTIONS DIALOGEX 0, 0, 229, 229
+STYLE DS_SETFONT | WS_CHILD | WS_DISABLED | WS_CAPTION
+CAPTION "Options"
+FONT 8, "MS Sans Serif", 0, 0, 0x1
+BEGIN
+    EDITTEXT        IDC_EDIT_MISSING_VALUE,15,21,40,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_NUM_ROWS,78,60,26,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_NUM_COLUMNS,180,60,26,14,ES_AUTOHSCROLL
+    CONTROL         "Default",IDC_RADIO_STANDARD,"Button",BS_AUTORADIOBUTTON | 
+                    WS_GROUP | WS_TABSTOP,24,100,80,10
+    CONTROL         "Custom width - specify:",IDC_RADIO_CUSTOM,"Button",
+                    BS_AUTORADIOBUTTON | WS_TABSTOP,24,113,87,10
+    EDITTEXT        IDC_EDIT_COLUMN_WIDTH,121,110,26,14,ES_AUTOHSCROLL
+    CONTROL         "Zero value",IDC_RADIO_INIT_CELLS,"Button",
+                    BS_AUTORADIOBUTTON | WS_GROUP,22,146,50,10
+    CONTROL         "Missing data value",IDC_RADIO2,"Button",
+                    BS_AUTORADIOBUTTON,22,158,75,10
+    CONTROL         "Random values",IDC_RADIO3,"Button",BS_AUTORADIOBUTTON,
+                    22,170,65,10
+    EDITTEXT        IDC_EDIT_DECIMAL_PRECISION,154,186,26,14,ES_AUTOHSCROLL
+    CONTROL         "Spin1",IDC_SPIN_DEC_PLACES,"msctls_updown32",
+                    UDS_SETBUDDYINT | UDS_AUTOBUDDY | UDS_ARROWKEYS | 
+                    UDS_NOTHOUSANDS,181,186,11,14
+    LTEXT           "Number of rows:",IDC_STATIC,22,62,52,8
+    LTEXT           "Number of decimal places to display:",IDC_STATIC,139,
+                    164,68,20
+    GROUPBOX        "Initialise cells with: ",IDC_STATIC,7,135,103,90
+    LTEXT           "Number of columns:",IDC_STATIC,112,62,64,8
+    GROUPBOX        "Table size",IDC_STATIC,7,46,215,35
+    GROUPBOX        "Decimal places",IDC_STATIC,119,135,103,90
+    GROUPBOX        "Initial column width",IDC_STATIC,7,86,215,43
+    GROUPBOX        "Missing value",IDC_STATIC,7,7,215,35
+    LTEXT           "Specify the value to represent missing data in the table.",
+                    IDC_STATIC,65,19,128,18
+    EDITTEXT        IDC_RANDOM_SEED,67,183,36,14,ES_AUTOHSCROLL | ES_NUMBER
+    LTEXT           "Random Seed",IDC_STATIC,15,185,46,8
+    LTEXT           "Random numbers are between 0 and 10 using the current random number generator",
+                    IDC_STATIC,11,198,98,23,0,WS_EX_TRANSPARENT
+END
+
+IDD_STARTUP DIALOG  0, 0, 244, 178
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP
+FONT 8, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "",IDC_BTN_OPEN,20,37,26,22,BS_ICON
+    PUSHBUTTON      "",IDC_BTN_NEW,20,66,26,22,BS_ICON
+    PUSHBUTTON      "",IDC_BTN_IMPORT,20,95,26,22,BS_ICON
+    PUSHBUTTON      "Close",IDCANCEL,187,157,50,14
+    LTEXT           "Open an existing PATN file",IDC_STATIC,54,45,93,8
+    LTEXT           "Create a new PATN file",IDC_STATIC,54,74,99,8
+    LTEXT           "Import data from an external file",IDC_STATIC,54,103,
+                    110,8
+    GROUPBOX        " What would you like to do? ",IDC_GROUP,7,7,165,155
+    CONTROL         159,IDC_STATIC,"Static",SS_BITMAP,195,23,32,37
+END
+
+IDD_SELECT_COLS_OR_ROWS DIALOGEX 0, 0, 423, 156
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Select columns/rows"
+FONT 8, "MS Sans Serif", 0, 0, 0x0
+BEGIN
+    CONTROL         "Columns",IDC_RADIO_COLUMNS,"Button",BS_AUTORADIOBUTTON | 
+                    WS_GROUP,25,19,43,10
+    CONTROL         "Rows",IDC_RADIO_ROWS,"Button",BS_AUTORADIOBUTTON,75,19,
+                    34,10
+    LISTBOX         IDC_LB_ALL,16,67,137,73,LBS_NOINTEGRALHEIGHT | 
+                    LBS_EXTENDEDSEL | LBS_DISABLENOSCROLL | WS_VSCROLL | 
+                    WS_TABSTOP
+    PUSHBUTTON      "Add >",IDC_BTN_ADD,164,68,56,14
+    PUSHBUTTON      "Add All >>",IDC_BTN_ADD_ALL,164,87,56,14
+    PUSHBUTTON      "< Remove",IDC_BTN_REMOVE,164,107,56,14
+    PUSHBUTTON      "<< Remove All",IDC_BTN_REMOVE_ALL,164,127,56,14
+    LISTBOX         IDC_LB_SELECTED,229,67,119,73,LBS_NOINTEGRALHEIGHT | 
+                    LBS_EXTENDEDSEL | LBS_DISABLENOSCROLL | WS_VSCROLL | 
+                    WS_TABSTOP
+    DEFPUSHBUTTON   "Close",IDC_BTN_CLOSE,365,115,50,14
+    PUSHBUTTON      "Help",ID_HELP,365,135,50,14
+    GROUPBOX        "",IDC_STATIC,7,46,349,103
+    LTEXT           "All:",IDC_STATIC,17,57,10,8
+    LTEXT           "Selected:",IDC_STATIC,229,56,31,8
+    GROUPBOX        "Show:",IDC_STATIC,7,7,119,31
+END
+
+IDD_EXPONENT DIALOG  0, 0, 160, 70
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_VISIBLE | WS_CAPTION | 
+    WS_SYSMENU
+CAPTION "Enter Exponent"
+FONT 8, "MS Sans Serif"
+BEGIN
+    EDITTEXT        IDC_EXPONENT,127,18,28,13,ES_AUTOHSCROLL
+    DEFPUSHBUTTON   "OK",IDOK,27,50,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,83,50,50,14
+    LTEXT           "Enter the power to which to raise each data value in the selected columns or rows.",
+                    IDC_STATIC,5,11,107,32
+END
+
+IDD_LOG_CONSTANT DIALOG  0, 0, 163, 69
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_VISIBLE | WS_CAPTION | 
+    WS_SYSMENU
+CAPTION "Add Log Constant"
+FONT 8, "MS Sans Serif"
+BEGIN
+    EDITTEXT        IDC_CONSTANT,130,17,28,13,ES_AUTOHSCROLL
+    DEFPUSHBUTTON   "OK",IDOK,27,50,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,87,50,50,14
+    LTEXT           "If you wish, enter a constant to be added to each data value prior to taking the log.",
+                    IDC_STATIC,5,9,105,32
+END
+
+IDD_NONZEROS_CONSTANT DIALOG  0, 0, 167, 74
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_VISIBLE | WS_CAPTION | 
+    WS_SYSMENU
+CAPTION "Convert non-zero values to constant"
+FONT 8, "MS Sans Serif"
+BEGIN
+    EDITTEXT        IDC_CONSTANT,123,22,39,13,ES_AUTOHSCROLL
+    DEFPUSHBUTTON   "OK",IDOK,31,55,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,87,55,50,14
+    LTEXT           "Enter the constant to which to convert each non-zero data value in the selected columns or rows.",
+                    IDC_STATIC,5,11,112,25
+END
+
+IDD_ANALYSIS DIALOG  0, 0, 227, 157
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_VISIBLE | WS_CAPTION | 
+    WS_SYSMENU
+CAPTION "Data Analysis"
+FONT 8, "MS Sans Serif"
+BEGIN
+    CONTROL         "No",IDC_ROWS_NO,"Button",BS_AUTORADIOBUTTON | WS_GROUP,
+                    117,25,30,10
+    CONTROL         "Yes",IDC_ROWS_YES,"Button",BS_AUTORADIOBUTTON,117,38,30,
+                    10
+    PUSHBUTTON      "Set Parameters",IDC_SET_PARMS_ROWS,23,60,116,14
+    CONTROL         "No",IDC_COLUMNS_NO,"Button",BS_AUTORADIOBUTTON | 
+                    WS_GROUP,119,105,30,10
+    CONTROL         "Yes",IDC_COLUMNS_YES,"Button",BS_AUTORADIOBUTTON,119,
+                    118,30,10
+    PUSHBUTTON      "Set Parameters",IDC_SET_PARMS_COLUMNS,21,138,116,14
+    DEFPUSHBUTTON   "Run",IDC_RUN,167,108,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,167,125,50,14
+    PUSHBUTTON      "Help",ID_HELP,167,142,50,14
+    GROUPBOX        " Rows ",IDC_STATIC,5,12,149,67
+    LTEXT           "Perform analysis on rows?",IDC_STATIC,13,25,97,8
+    GROUPBOX        " Columns ",IDC_STATIC,5,90,149,67
+    LTEXT           "Perform analysis on columns?",IDC_STATIC,13,105,97,8
+    CONTROL         "All Evaluations",IDC_EVALUATION1,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,159,33,62,10
+END
+
+IDD_ASSOCIATION_PAGE DIALOGEX 0, 0, 312, 173
+STYLE DS_SETFONT | WS_CHILD | WS_DISABLED | WS_CAPTION
+CAPTION "Association"
+FONT 8, "MS Sans Serif", 0, 0, 0x0
+BEGIN
+    LISTBOX         IDC_ASSOC_MEASURES,8,30,110,52,LBS_NOINTEGRALHEIGHT | 
+                    WS_TABSTOP
+    LTEXT           "Association Measures:",IDC_STATIC,8,20,75,8
+    LTEXT           "Select the desired association measure - the recommended option is highlighted.",
+                    IDC_STATIC,8,7,281,13
+    EDITTEXT        IDC_CONSTANT,183,29,53,12,ES_AUTOHSCROLL
+    LTEXT           "Constant",IDC_STATIC,149,32,29,8
+    LTEXT           "If the number of rows > 100, then pair-wise association is not checked (not generated) by default, nor is ordination. Non-hierarchical clustering is however selected in this case with ",
+                    IDC_INFO,8,89,283,19
+    CONTROL         "Generate a lower symmetric matrix of associations",
+                    IDC_ALLOWASSOC,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,8,
+                    157,241,8
+    LTEXT           "an appropriate association measure (object-centroid associations are calculated). These defaults can be overwritten, but CAREFULLY consider the appropriateness of the strategy ",
+                    IDC_INFO2,8,105,284,18
+    LTEXT           "and the resources required. You may have to cancel the generation of a large (pair-wise) association matrix, hierarchical clustering (if selected), ordination (the most resource intensive algorithm), PCC or MCAO.",
+                    IDC_INFO3,8,121,284,27
+END
+
+IDD_CLASSIFICATION_PAGE_COLS DIALOG  0, 0, 312, 142
+STYLE DS_SETFONT | WS_CHILD | WS_DISABLED | WS_CAPTION
+CAPTION "Classification"
+FONT 8, "MS Sans Serif"
+BEGIN
+    CONTROL         "None (ie, no classification will be performed)",
+                    IDC_NONE,"Button",BS_AUTORADIOBUTTON | WS_GROUP,17,27,
+                    169,10
+    CONTROL         "Agglomerative Hierarchical Fusion",IDC_FUSE,"Button",
+                    BS_AUTORADIOBUTTON,17,51,122,10
+    COMBOBOX        IDC_FUSE_TECHNIQUE,27,76,108,52,CBS_DROPDOWNLIST | 
+                    WS_VSCROLL | WS_TABSTOP
+    EDITTEXT        IDC_BETA,105,95,30,13,ES_AUTOHSCROLL
+    EDITTEXT        IDC_NUM_GROUPS,143,122,40,13,ES_AUTOHSCROLL | ES_NUMBER
+    RTEXT           "How many final groups do you want?",IDC_STATIC,11,124,
+                    130,8
+    LTEXT           "Select the desired classification strategy:",IDC_STATIC,
+                    11,11,145,8
+    LTEXT           "Which technique?",IDC_STATIC,27,65,91,8
+    RTEXT           "Enter a value for Beta:",IDC_STATIC,15,97,85,8
+    GROUPBOX        "",IDC_STATIC,8,38,146,77
+END
+
+IDD_CLASSIFICATION_PAGE_ROWS DIALOGEX 0, 0, 312, 161
+STYLE DS_SETFONT | WS_CHILD | WS_DISABLED | WS_CAPTION
+CAPTION "Classification"
+FONT 8, "MS Sans Serif", 0, 0, 0x0
+BEGIN
+    CONTROL         "None (ie, no classification will be performed)",
+                    IDC_NONE,"Button",BS_AUTORADIOBUTTON | WS_GROUP,17,27,
+                    169,10
+    CONTROL         "Agglomerative Hierarchical Fusion",IDC_FUSE,"Button",
+                    BS_AUTORADIOBUTTON,17,48,122,10
+    EDITTEXT        IDC_BETA,105,112,30,13,ES_AUTOHSCROLL
+    CONTROL         "Non-hierarchical Clustering",IDC_ALOC,"Button",
+                    BS_AUTORADIOBUTTON,165,48,96,8
+    LISTBOX         IDC_ALOC_ASSOC_MEASURE,177,78,77,29,LBS_NOINTEGRALHEIGHT | 
+                    WS_VSCROLL | WS_TABSTOP
+    EDITTEXT        IDC_NUM_GROUPS,202,143,40,13,ES_AUTOHSCROLL | ES_NUMBER
+    RTEXT           "How many final groups do you want?",IDC_STATIC,69,145,
+                    130,8
+    LTEXT           "Select the desired classification strategy:",IDC_STATIC,
+                    11,11,145,8
+    LTEXT           "Which association measure?",IDC_STATIC,178,65,102,8
+    CONTROL         "",IDC_STATIC,"Static",SS_GRAYFRAME,11,42,142,86
+    CONTROL         "",IDC_STATIC,"Static",SS_GRAYFRAME,157,42,147,86
+    LTEXT           "Which technique?",IDC_STATIC,27,65,91,8
+    RTEXT           "Enter a value for Beta:",IDC_STATIC,15,114,85,8
+    COMBOBOX        IDC_FUSE_TECHNIQUE,27,78,108,52,CBS_DROPDOWNLIST | 
+                    WS_VSCROLL | WS_TABSTOP
+    EDITTEXT        IDC_CONSTANT,225,111,30,13,ES_AUTOHSCROLL
+    RTEXT           "Constant",IDC_STATIC,178,113,42,8
+END
+
+IDD_ANALYSIS_RECIPE DIALOG  0, 0, 344, 233
+STYLE DS_SETFONT | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU | 
+    WS_THICKFRAME
+CAPTION "Analysis Recipe"
+FONT 8, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,115,216,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,173,216,50,14
+    EDITTEXT        IDC_ANALYSIS_LAYOUT,12,30,324,182,ES_MULTILINE | 
+                    ES_READONLY | WS_VSCROLL | WS_HSCROLL
+    LTEXT           "You have selected to perform the following analysis:",
+                    IDC_STATIC,12,10,214,14
+    PUSHBUTTON      "Save Recipe",IDC_SAVERECIPE,12,216,49,14
+END
+
+IDD_PICK_ASSOC_MATRIX DIALOG  0, 0, 185, 143
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_VISIBLE | WS_CAPTION | 
+    WS_SYSMENU
+CAPTION "Select Association Matrix"
+FONT 8, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,39,123,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,96,123,50,14
+    LTEXT           "An association matrix exists for both columns and rows.  Select which matrix to use.",
+                    IDC_STATIC,18,19,148,26
+    CONTROL         "Columns",IDC_COLUMNS,"Button",BS_AUTORADIOBUTTON | 
+                    WS_GROUP | WS_TABSTOP,74,74,43,10
+    CONTROL         "Rows",IDC_ROWS,"Button",BS_AUTORADIOBUTTON | WS_TABSTOP,
+                    74,89,43,10
+    GROUPBOX        "Use matrix based on:",IDC_STATIC,43,54,99,56
+END
+
+IDD_PICK_FUSE_TABLE DIALOG  0, 0, 185, 143
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_VISIBLE | WS_CAPTION | 
+    WS_SYSMENU
+CAPTION "Select Fusion Table"
+FONT 8, "MS Sans Serif"
+BEGIN
+    CONTROL         "Columns",IDC_COLUMNS,"Button",BS_AUTORADIOBUTTON | 
+                    WS_GROUP | WS_TABSTOP,74,74,43,10
+    CONTROL         "Rows",IDC_ROWS,"Button",BS_AUTORADIOBUTTON | WS_TABSTOP,
+                    74,89,43,10
+    DEFPUSHBUTTON   "OK",IDOK,39,123,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,95,123,50,14
+    LTEXT           "A fusion table esists for both columns and rows.  Select which table to use.",
+                    IDC_STATIC,22,19,144,24
+    GROUPBOX        "Static",IDC_STATIC,39,53,106,58
+END
+
+IDD_PAGE_COLUMN_OPTIONS DIALOG  0, 0, 176, 126
+STYLE DS_SETFONT | WS_CHILD | WS_DISABLED | WS_CAPTION
+FONT 8, "MS Sans Serif"
+BEGIN
+    EDITTEXT        IDC_EDIT_LABEL,32,7,70,14,ES_AUTOHSCROLL
+    LTEXT           "Label:",IDC_STATIC,7,10,20,8
+    GROUPBOX        "Column width",IDC_STATIC,7,35,153,57
+    LTEXT           "Number of decimal places to display:",IDC_STATIC,7,101,
+                    68,18
+    LTEXT           "Group:",IDC_STATIC,7,23,22,8
+    EDITTEXT        IDC_EDIT_GROUP,32,21,70,14,ES_AUTOHSCROLL | ES_NUMBER
+    CONTROL         "Hide column",IDC_CHECK_HIDE,"Button",BS_AUTO3STATE | 
+                    WS_TABSTOP,114,9,55,10
+    CONTROL         "Standard",IDC_RADIO_STANDARD,"Button",
+                    BS_AUTORADIOBUTTON | WS_GROUP | WS_TABSTOP,24,49,80,10
+    CONTROL         "Custom width - specify:",IDC_RADIO_CUSTOM,"Button",
+                    BS_AUTORADIOBUTTON | WS_TABSTOP,24,62,87,10
+    CONTROL         "Size to fit",IDC_RADIO_SIZETOFIT,"Button",
+                    BS_AUTORADIOBUTTON,24,75,45,10
+    EDITTEXT        IDC_EDIT_COLUMN_WIDTH,121,59,26,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_DECIMAL_PRECISION,84,103,26,14,ES_AUTOHSCROLL
+    CONTROL         "Spin1",IDC_SPIN_DEC_PLACES,"msctls_updown32",
+                    UDS_SETBUDDYINT | UDS_AUTOBUDDY | UDS_ARROWKEYS | 
+                    UDS_NOTHOUSANDS | WS_TABSTOP,112,103,11,14
+END
+
+IDD_PAGE_ROW_OPTIONS DIALOGEX 0, 0, 256, 50
+STYLE DS_SETFONT | WS_CHILD | WS_DISABLED | WS_CAPTION
+FONT 8, "MS Sans Serif", 0, 0, 0x0
+BEGIN
+    EDITTEXT        IDC_EDIT_LABEL,32,7,144,14,ES_AUTOHSCROLL
+    CONTROL         "Hide row",IDC_CHECK_HIDE,"Button",BS_AUTO3STATE | 
+                    WS_TABSTOP,192,8,55,10
+    LTEXT           "Label:",IDC_STATIC,7,10,20,8
+    LTEXT           "Group:",IDC_STATIC,7,23,22,8
+    EDITTEXT        IDC_EDIT_GROUP,32,21,70,14,ES_AUTOHSCROLL | ES_NUMBER
+END
+
+IDD_TWAY_OPTIONS DIALOG  0, 0, 193, 119
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Two-way Table Options"
+FONT 8, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,143,9,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,143,26,50,14
+    EDITTEXT        IDC_SCALE,137,74,40,12,ES_AUTOHSCROLL | NOT WS_VISIBLE
+    CONTROL         "Individual Column Standardization",IDC_COLSTD,"Button",
+                    BS_AUTORADIOBUTTON | WS_GROUP,15,20,122,10
+    CONTROL         "Global Standardization",IDC_GLOBSTD,"Button",
+                    BS_AUTORADIOBUTTON,15,31,87,10
+    CONTROL         "Presence / Absence",IDC_PRESABS,"Button",
+                    BS_AUTORADIOBUTTON,15,42,81,10
+    CONTROL         "Red",IDC_RED,"Button",BS_AUTORADIOBUTTON | WS_GROUP,47,
+                    70,29,10
+    CONTROL         "Green",IDC_GREEN,"Button",BS_AUTORADIOBUTTON,47,81,35,
+                    10
+    CONTROL         "Black && White",IDC_BW,"Button",BS_AUTORADIOBUTTON,47,
+                    100,61,10
+    GROUPBOX        "Method",IDC_STATIC,7,7,133,48
+    GROUPBOX        "Colour Scheme",IDC_STATIC,37,57,78,58
+    CONTROL         "Blue",IDC_BLUE,"Button",BS_AUTORADIOBUTTON,47,90,30,10
+END
+
+IDD_GROUPS DIALOGEX 0, 0, 426, 166
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Groups"
+FONT 8, "MS Sans Serif", 0, 0, 0x0
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,368,8,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,368,25,50,14
+    LISTBOX         IDC_ALL,14,71,103,73,LBS_NOINTEGRALHEIGHT | 
+                    LBS_EXTENDEDSEL | LBS_DISABLENOSCROLL | WS_VSCROLL | 
+                    WS_TABSTOP
+    PUSHBUTTON      "Add >",IDC_ADD,124,71,56,14
+    PUSHBUTTON      "Add All >>",IDC_ADD_ALL,124,91,56,14
+    PUSHBUTTON      "< Remove",IDC_REMOVE,124,110,56,14
+    PUSHBUTTON      "<< Remove All",IDC_REMOVE_ALL,124,129,56,14
+    LISTBOX         IDC_SELECTED,186,71,93,73,LBS_NOINTEGRALHEIGHT | 
+                    LBS_EXTENDEDSEL | LBS_DISABLENOSCROLL | WS_VSCROLL | 
+                    WS_TABSTOP
+    GROUPBOX        "Select:",IDC_STATIC,7,52,279,106
+    GROUPBOX        "For Group",IDC_GROUP,295,52,122,106
+    LISTBOX         IDC_GROUPS,357,76,51,76,LBS_NOINTEGRALHEIGHT | 
+                    LBS_DISABLENOSCROLL | WS_VSCROLL | WS_TABSTOP
+    PUSHBUTTON      "Delete",IDC_DELETE,301,97,50,14
+    PUSHBUTTON      "New",IDC_NEW,301,78,50,14
+    CONTROL         "Columns",IDC_COLUMNS,"Button",BS_AUTORADIOBUTTON | 
+                    WS_GROUP,19,19,43,10
+    CONTROL         "Rows",IDC_ROWS,"Button",BS_AUTORADIOBUTTON,19,32,43,10
+    GROUPBOX        "Show:",IDC_STATIC,8,7,93,42
+    EDITTEXT        IDC_GROUPNUM,357,60,50,14,ES_NUMBER
+    PUSHBUTTON      "Change Group Colour",IDC_GROUPCOLOUR,302,116,50,20,
+                    BS_MULTILINE
+    LTEXT           "Note: Row dendrogram has been closed.",IDC_STATIC,120,
+                    10,154,21
+END
+
+IDD_GSTA_OPTIONS DIALOG  0, 0, 186, 46
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Group Statistics Options"
+FONT 8, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,129,7,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,129,24,50,14
+    CONTROL         "Presence Absence",IDC_CHECK2,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,12,25,76,10
+    LTEXT           "Only Mean values will be shown",IDC_STATIC,11,3,102,8
+END
+
+IDD_EDITTEXT DIALOGEX 0, 0, 210, 62
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Edit Text Box"
+FONT 8, "MS Sans Serif", 0, 0, 0x0
+BEGIN
+    PUSHBUTTON      "Delete",IDOK,153,34,50,14
+    DEFPUSHBUTTON   "OK",IDCANCEL,154,8,50,14
+    EDITTEXT        IDC_EDIT1,7,7,132,14,ES_AUTOHSCROLL
+    LTEXT           "Font Size:",IDC_STATIC,7,32,32,8
+    EDITTEXT        IDC_EDIT_DECIMAL_PRECISION,43,31,26,14,ES_AUTOHSCROLL | 
+                    ES_NUMBER
+    CONTROL         "Spin1",IDC_SPIN_DEC_PLACES,"msctls_updown32",
+                    UDS_SETBUDDYINT | UDS_AUTOBUDDY | UDS_ARROWKEYS | 
+                    UDS_NOTHOUSANDS,71,31,11,14
+END
+
+IDD_TABLEPROPERTIES DIALOG  0, 0, 236, 54
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Table Properties"
+FONT 8, "MS Sans Serif"
+BEGIN
+    LTEXT           "Missing Value",IDC_STATIC,3,30,44,8
+    LTEXT           "Table Name",IDC_STATIC,3,9,40,8
+    EDITTEXT        IDC_EDIT1,50,7,178,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT2,49,28,40,14,ES_AUTOHSCROLL
+    DEFPUSHBUTTON   "OK",IDOK,123,28,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,177,28,50,14
+END
+
+IDD_ATTRIBUTE DIALOGEX 0, 0, 224, 182
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Attribute Selection"
+FONT 8, "MS Sans Serif", 0, 0, 0x0
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,167,18,50,14
+    LISTBOX         IDC_LABELS,7,18,151,159,LBS_NOINTEGRALHEIGHT | 
+                    WS_VSCROLL | WS_TABSTOP
+    LTEXT           "Column:",IDC_STATIC,7,7,26,8
+END
+
+IDD_PCCVECTORSELECTION DIALOGEX 0, 0, 242, 114
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "PCC Vector Selection"
+FONT 8, "MS Sans Serif", 0, 0, 0x0
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,188,17,50,14
+    LISTBOX         IDC_LABELS,7,18,160,89,LBS_NOINTEGRALHEIGHT | 
+                    LBS_EXTENDEDSEL | WS_VSCROLL | WS_TABSTOP
+    PUSHBUTTON      "Select None",IDC_SELECTNONE,188,92,50,14
+    LTEXT           "R-Squared / Column",IDC_STATIC,7,7,66,8
+    PUSHBUTTON      "Select All",IDC_SELECTALL,188,73,50,14
+END
+
+IDD_PATTERN_ORDER DIALOGEX 0, 0, 253, 182
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Assign Symbols to Objects & Groups"
+FONT 8, "MS Sans Serif", 0, 0, 0x0
+BEGIN
+    PUSHBUTTON      "Close",IDCANCEL,81,159,50,14
+    LISTBOX         IDC_PATTERNS,206,20,22,146,WS_TABSTOP
+    LISTBOX         IDC_OBJECTS,9,20,143,100,LBS_EXTENDEDSEL | WS_TABSTOP
+    PUSHBUTTON      "Reset All",IDC_RESET,81,143,50,14
+    PUSHBUTTON      "Assign Symbol",IDC_ASSIGN,81,127,50,14
+    CONTROL         "Objects",IDC_RADIO1,"Button",BS_AUTORADIOBUTTON | 
+                    WS_GROUP,12,137,40,10
+    CONTROL         "Groups",IDC_RADIO2,"Button",BS_AUTORADIOBUTTON,12,150,
+                    39,10
+    GROUPBOX        "Type",IDC_STATIC,7,123,66,56
+    LTEXT           "Object / Group",IDC_STATIC,7,7,48,8
+    LTEXT           "All Symbols",IDC_STATIC,185,7,36,8
+    CONTROL         "Slider1",IDC_SCROLL_PATTERNS,"msctls_trackbar32",
+                    TBS_VERT | TBS_BOTH | TBS_NOTICKS | WS_TABSTOP,228,21,11,
+                    146
+    CONTROL         "Slider1",IDC_SCROLL_OBJECTS,"msctls_trackbar32",
+                    TBS_VERT | TBS_BOTH | TBS_NOTICKS | WS_TABSTOP,157,20,11,
+                    91
+    CONTROL         "a priori Groups",IDC_RADIO3,"Button",BS_AUTORADIOBUTTON,
+                    12,163,61,10
+END
+
+IDD_ORDINATION_PAGE DIALOGEX 0, 0, 306, 170
+STYLE DS_SETFONT | WS_CHILD | WS_DISABLED | WS_CAPTION | WS_SYSMENU
+CAPTION "Ordination"
+FONT 8, "MS Sans Serif", 0, 0, 0x0
+BEGIN
+    CONTROL         "SSH",IDC_CHECK1,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,
+                    28,15,31,10
+    EDITTEXT        IDC_EDIT1,90,40,40,14,ES_AUTOHSCROLL | WS_DISABLED
+    LTEXT           "Cutoff Value",IDC_STATIC,5,43,40,8
+    LTEXT           "Number of Random Starts",IDC_STATIC,5,59,82,8
+    EDITTEXT        IDC_EDIT2,90,58,40,14,ES_AUTOHSCROLL | WS_DISABLED
+    LTEXT           "Random Seed",IDC_STATIC,5,77,46,8
+    EDITTEXT        IDC_SEED,90,76,40,14,ES_AUTOHSCROLL | WS_DISABLED
+    LTEXT           "Max Number of Iterations",IDC_STATIC,5,94,80,8
+    EDITTEXT        IDC_ITERATIONS,90,94,40,14,ES_AUTOHSCROLL | WS_DISABLED
+    CONTROL         "With Tunneling",IDC_CHECK2,"Button",BS_AUTOCHECKBOX | 
+                    NOT WS_VISIBLE | WS_TABSTOP,34,115,64,10
+    LTEXT           "Movement Factor (more loss when greater)",IDC_STATIC1,3,
+                    138,135,8,NOT WS_VISIBLE
+    LTEXT           "Tunnels Per Random Start",IDC_STATIC2,3,153,84,8,NOT 
+                    WS_VISIBLE
+    EDITTEXT        IDC_EDIT5,141,134,40,14,ES_AUTOHSCROLL | NOT WS_VISIBLE | 
+                    WS_DISABLED
+    EDITTEXT        IDC_EDIT6,141,152,40,14,ES_AUTOHSCROLL | NOT WS_VISIBLE | 
+                    WS_DISABLED
+    CONTROL         "Calculate and Output Pre-Post Tunnel Statistics to ""C:\\ordstats.csv""",
+                    IDC_CHECK3,"Button",BS_AUTOCHECKBOX | BS_MULTILINE | NOT 
+                    WS_VISIBLE | WS_DISABLED | WS_TABSTOP,197,138,94,22
+    CONTROL         "3d Ordination",IDC_3D,"Button",BS_AUTORADIOBUTTON | 
+                    WS_GROUP,73,4,58,10
+    CONTROL         "2d Ordination",IDC_2D,"Button",BS_AUTORADIOBUTTON,73,15,
+                    58,10
+    CONTROL         "1d Ordination",IDC_1D,"Button",BS_AUTORADIOBUTTON,73,26,
+                    58,10
+END
+
+IDD_DATA_TRANSFORM DIALOGEX 0, 0, 528, 186
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_VISIBLE | WS_CAPTION | 
+    WS_SYSMENU
+CAPTION "Data Transformation"
+FONT 8, "MS Sans Serif", 0, 0, 0x0
+BEGIN
+    CONTROL         "Columns",IDC_COLUMNS,"Button",BS_AUTORADIOBUTTON | 
+                    WS_GROUP,11,19,43,10
+    CONTROL         "Rows",IDC_ROWS,"Button",BS_AUTORADIOBUTTON,11,32,43,10
+    LISTBOX         IDC_OPTIONS,3,74,209,49,LBS_NOINTEGRALHEIGHT | 
+                    WS_VSCROLL | WS_TABSTOP
+    LISTBOX         IDC_ALL,222,30,116,73,LBS_NOINTEGRALHEIGHT | 
+                    LBS_EXTENDEDSEL | LBS_DISABLENOSCROLL | WS_VSCROLL | 
+                    WS_TABSTOP
+    PUSHBUTTON      "Add >",IDC_ADD,348,31,56,14
+    PUSHBUTTON      "Add All >>",IDC_ADD_ALL,348,49,56,14
+    PUSHBUTTON      "< Remove",IDC_REMOVE,348,67,56,14
+    PUSHBUTTON      "<< Remove All",IDC_REMOVE_ALL,348,86,56,14
+    LISTBOX         IDC_SELECTED,413,29,103,73,LBS_NOINTEGRALHEIGHT | 
+                    LBS_EXTENDEDSEL | LBS_DISABLENOSCROLL | WS_VSCROLL | 
+                    WS_TABSTOP
+    DEFPUSHBUTTON   "Run",IDC_RUN,241,126,50,14
+    PUSHBUTTON      "Close",IDC_CLOSE,301,126,50,14
+    ICON            IDI_STOP,IDC_STATIC,15,151,21,20
+    LTEXT           "WARNING! This operation will modify data values in the table - if you want to retain the current data values for later use, then press Close and save your table as a duplicate file under another name before returning to this operation.",
+                    IDC_STATIC,157,153,367,25
+    GROUPBOX        "Show:",IDC_STATIC,0,7,215,42
+    GROUPBOX        "Options:",IDC_STATIC,0,56,215,78
+    GROUPBOX        "Select:",IDC_STATIC,218,17,306,94
+    PUSHBUTTON      "Help",ID_HELP,474,126,50,14
+END
+
+IDD_ANOSIMRESULTS DIALOGEX 0, 0, 363, 154
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "ANOSIM Results"
+FONT 8, "MS Sans Serif", 0, 0, 0x0
+BEGIN
+    EDITTEXT        IDC_BEST,107,68,69,13,ES_READONLY | NOT WS_BORDER
+    EDITTEXT        IDC_STAT,107,81,64,13,ES_READONLY | NOT WS_BORDER
+    EDITTEXT        IDC_BW,107,55,69,13,ES_READONLY | NOT WS_BORDER
+    PUSHBUTTON      "Close",IDCANCEL,158,134,50,14
+    EDITTEXT        IDC_ITERATIONS,108,20,59,14,ES_READONLY | ES_NUMBER | 
+                    NOT WS_BORDER | NOT WS_TABSTOP
+    LTEXT           "No. of iterations:",IDC_STATIC,7,21,64,8
+    GROUPBOX        "On Rows",IDC_STATIC,0,4,180,121
+    EDITTEXT        IDC_BEST2,291,68,60,13,ES_READONLY | NOT WS_BORDER
+    EDITTEXT        IDC_STAT2,291,82,60,13,ES_READONLY | NOT WS_BORDER
+    EDITTEXT        IDC_BW2,291,55,64,13,ES_READONLY | NOT WS_BORDER
+    EDITTEXT        IDC_ITERATIONS2,291,21,59,14,ES_READONLY | ES_NUMBER | 
+                    NOT WS_BORDER | NOT WS_TABSTOP
+    LTEXT           "No. of iterations:",IDC_STATIC,192,22,64,8
+    GROUPBOX        "On Columns",IDC_STATIC,186,4,170,121
+    EDITTEXT        IDC_SEED,108,34,59,14,ES_READONLY | ES_NUMBER | NOT 
+                    WS_BORDER | NOT WS_TABSTOP
+    LTEXT           "Seed:",IDC_STATIC,7,35,64,8
+    EDITTEXT        IDC_SEED2,291,35,59,14,ES_READONLY | ES_NUMBER | NOT 
+                    WS_BORDER | NOT WS_TABSTOP
+    LTEXT           "Seed:",IDC_STATIC,192,36,64,8
+    PUSHBUTTON      "Pair Results",IDC_ROWPAIRS,46,105,57,15
+    PUSHBUTTON      "Pair Results",IDC_COLPAIRS,248,105,57,15
+    LTEXT           "Real F",IDC_1,7,54,22,8
+    LTEXT           "Best F",IDC_2,7,68,21,8
+    LTEXT           "% Randomised > Real",IDC_3,7,81,70,8
+    LTEXT           "Real F",IDC_7,192,55,22,8
+    LTEXT           "Best F",IDC_8,192,68,21,8
+    LTEXT           "% Randomised > Real",IDC_9,192,82,70,8
+END
+
+IDD_VIEWHISTORY DIALOG  0, 0, 344, 233
+STYLE DS_SETFONT | WS_POPUP | WS_CAPTION | WS_SYSMENU | WS_THICKFRAME
+CAPTION "History"
+FONT 8, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "Close",IDOK,147,216,50,14
+    EDITTEXT        IDC_HISTORY,7,7,329,203,ES_MULTILINE | ES_READONLY | 
+                    WS_VSCROLL | WS_HSCROLL
+    PUSHBUTTON      "Save History",IDC_BUTTON2,15,216,50,14
+    PUSHBUTTON      "Clear History",IDC_CLEAR_HISTORY,286,216,50,14
+END
+
+IDD_CHOOSEANOSIM DIALOGEX 0, 0, 148, 95
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Pair Anosim Results"
+FONT 8, "MS Sans Serif", 0, 0, 0x0
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,47,74,50,14
+    GROUPBOX        "Select Type",IDC_STATIC,22,7,102,61
+    CONTROL         "Best f-ratio",IDC_RADIO1,"Button",BS_AUTORADIOBUTTON | 
+                    WS_GROUP,45,35,49,10
+    CONTROL         "% Best > Real",IDC_RADIO2,"Button",BS_AUTORADIOBUTTON,
+                    45,51,60,10
+    CONTROL         "Real f-ratio",IDC_RADIO3,"Button",BS_AUTORADIOBUTTON,45,
+                    19,50,10
+END
+
+IDD_EDITTEXT2 DIALOGEX 0, 0, 210, 54
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_APPWINDOW
+CAPTION "Edit Text Box"
+FONT 8, "MS Sans Serif", 0, 0, 0x0
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,151,7,50,14
+    PUSHBUTTON      "Delete",IDCLOSE,152,32,50,14
+    EDITTEXT        IDC_EDIT1,7,7,132,14,ES_AUTOHSCROLL
+    PUSHBUTTON      "Font",IDC_BUTTON1,8,32,50,14
+END
+
+IDD_OBJECTSIZE DIALOG  0, 0, 186, 46
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Object Size"
+FONT 8, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,129,7,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,129,24,50,14
+    EDITTEXT        IDC_OBJECTSIZE,59,17,47,14,ES_AUTOHSCROLL
+    LTEXT           "Size of Objects",IDC_SIZEOFOBJECTS,7,20,48,8
+END
+
+IDD_APPENDOPTIONS DIALOG  0, 0, 249, 119
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Append Settings"
+FONT 8, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,133,98,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,192,98,50,14
+    CONTROL         236,IDC_STATIC,"Static",SS_BITMAP,17,25,23,25
+    CONTROL         238,IDC_APPENDLHS,"Static",SS_BITMAP,66,23,27,28
+    CONTROL         237,IDC_APPENDBTM,"Static",SS_BITMAP,18,78,23,25
+    GROUPBOX        "Select Side",IDC_STATIC,7,7,100,105
+    CONTROL         239,IDC_APPENDLHSPLUS,"Static",SS_BITMAP,45,32,14,14
+    CONTROL         240,IDC_APPENDBTMPLUS,"Static",SS_BITMAP,23,55,14,14
+    GROUPBOX        "Input File Format",IDC_STATIC,113,7,129,76
+    CONTROL         248,IDC_COLUMNLABELS,"Static",SS_BITMAP,137,25,23,3
+    CONTROL         246,IDC_ROWLABELS,"Static",SS_BITMAP,124,36,3,25
+    CONTROL         241,IDC_INPUTFORMAT,"Static",SS_BITMAP,138,38,21,23
+    CONTROL         "Match labels with existing table labels",IDC_MATCH,
+                    "Button",BS_AUTOCHECKBOX | BS_MULTILINE | WS_TABSTOP,178,
+                    52,58,23
+    CONTROL         "Row Labels",IDC_RL,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,178,23,53,10
+    CONTROL         "Column Labels",IDC_CL,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,178,39,62,10
+END
+
+IDD_PROPERTIES_TABLEPROPERTIES DIALOGEX 0, 0, 288, 137
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION
+CAPTION "Project Properties"
+FONT 8, "MS Sans Serif", 0, 0, 0x0
+BEGIN
+    LTEXT           "Project Comment",IDC_STATIC,7,30,41,27
+    EDITTEXT        IDC_TABLENAME,58,29,223,100,ES_MULTILINE | ES_WANTRETURN
+    LTEXT           "Missing Value",IDC_STATIC,7,9,44,8
+    EDITTEXT        IDC_MISSINGVALUE,58,7,40,14,ES_AUTOHSCROLL
+END
+
+IDD_PROPERTIES_VISIBLESTATISTICS DIALOG  0, 0, 196, 148
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION
+CAPTION "Visible Statistics"
+FONT 8, "MS Sans Serif"
+BEGIN
+    CONTROL         "Sum",IDC_ROWSUM,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,
+                    13,19,30,10
+    CONTROL         "Minimum",IDC_ROWMIN,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,13,28,43,10
+    CONTROL         "Mean",IDC_ROWMEAN,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,
+                    13,38,34,10
+    CONTROL         "Maximum",IDC_ROWMAX,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,13,48,45,10
+    CONTROL         "Number > 0",IDC_ROWNO,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,13,58,53,10
+    CONTROL         "No. Missing Values",IDC_ROWMISSING,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,13,67,76,10
+    CONTROL         "Sum",IDC_COLSUM,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,
+                    105,19,30,10
+    CONTROL         "Minimum",IDC_COLMIN,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,105,28,43,10
+    CONTROL         "Mean",IDC_COLMEAN,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,
+                    105,38,34,10
+    CONTROL         "Maximum",IDC_COLMAX,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,105,48,45,10
+    CONTROL         "Number > 0",IDC_COLNO,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,105,58,53,10
+    CONTROL         "No. Missing Values",IDC_COLMISSING,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,105,67,76,10
+    GROUPBOX        "Visible Column Statistics",IDC_STATIC,99,7,90,74
+    GROUPBOX        "Visible Row Statistics",IDC_STATIC,7,7,88,74
+    LTEXT           "Number of visible decimals on Rows",IDC_STATIC,32,88,58,
+                    21
+    EDITTEXT        IDC_VISIBLEDEC_EDIT,95,89,40,14,ES_AUTOHSCROLL | 
+                    ES_NUMBER
+    CONTROL         "Spin2",IDC_VISDEC_SPIN,"msctls_updown32",
+                    UDS_SETBUDDYINT | UDS_AUTOBUDDY | UDS_ARROWKEYS | 
+                    UDS_HORZ | UDS_NOTHOUSANDS,137,90,21,11
+    EDITTEXT        IDC_COLDEC,95,117,40,14,ES_AUTOHSCROLL
+    CONTROL         "Spin3",IDC_COLSPIN,"msctls_updown32",UDS_SETBUDDYINT | 
+                    UDS_AUTOBUDDY | UDS_ARROWKEYS | UDS_HORZ | 
+                    UDS_NOTHOUSANDS,137,118,21,11
+    CONTROL         "Set the number of visible decimals on all Columns to",
+                    IDC_COLDECCHECK,"Button",BS_AUTOCHECKBOX | BS_MULTILINE | 
+                    WS_TABSTOP,19,109,74,32
+END
+
+IDD_PROPERTIES_ORDINATIONDISPLAYTYPE DIALOGEX 0, 0, 287, 106
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION
+CAPTION "Ordination Display Type"
+FONT 8, "MS Sans Serif", 0, 0, 0x0
+BEGIN
+    CONTROL         "OpenGL",IDC_ORDTYPE,"Button",BS_AUTORADIOBUTTON | NOT 
+                    WS_VISIBLE | WS_GROUP,6,12,43,10
+    CONTROL         "DirectX 7",IDC_RADIO5,"Button",BS_AUTORADIOBUTTON,6,44,
+                    45,10
+    CONTROL         "Safe Mode (GDI)",IDC_RADIO6,"Button",BS_AUTORADIOBUTTON,
+                    6,74,69,10
+    LTEXT           "When using Safe Mode the screen may flash when being redraw.  This is unpleasent.  It is significantly slower than the other modes.  It has not shading on the objects.",
+                    IDC_STATIC,83,71,195,27
+    LTEXT           "Known problems with this mode are; text may not appear, and the directX version may not be correctly detected resulting in default mode change to OpenGL.",
+                    IDC_STATIC,83,39,197,26
+    LTEXT           "This mode has less functionality than the other modes.  Known problems with this mode are; the visible region may contain black edges that obscure the display.",
+                    IDC_STATIC,83,7,197,28,NOT WS_VISIBLE
+END
+
+IDD_PROPERTIES_RANDOMTYPE DIALOG  0, 0, 369, 129
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION
+CAPTION "Random Number Generation"
+FONT 8, "MS Sans Serif"
+BEGIN
+    CONTROL         "Uniform Random",IDC_UNIFORMRANDOM,"Button",
+                    BS_AUTORADIOBUTTON | WS_GROUP,19,16,69,10
+    CONTROL         "RANLUX",IDC_LUXURY,"Button",BS_AUTORADIOBUTTON,19,34,45,
+                    10
+    CONTROL         "RANMAR",IDC_MAR,"Button",BS_AUTORADIOBUTTON,19,50,47,10
+    CONTROL         "RANENU",IDC_ENU,"Button",BS_AUTORADIOBUTTON,20,69,47,10
+    EDITTEXT        IDC_ABOUT_METHOD,130,18,232,104,ES_MULTILINE | 
+                    ES_READONLY | WS_VSCROLL
+    PUSHBUTTON      "Export 10000 Random Numbers",IDC_EXPORT,7,108,118,14
+    LTEXT           "Random Seed",IDC_STATIC,7,92,46,8
+    EDITTEXT        IDC_SEED,62,89,62,14,ES_AUTOHSCROLL
+    LTEXT           "About the selected method",IDC_STATIC,129,7,86,8
+END
+
+IDD_GETUSERIDENTITY DIALOG  0, 0, 247, 82
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Enter Name and Password"
+FONT 8, "MS Sans Serif"
+BEGIN
+    LTEXT           "Name",IDC_STATIC,7,9,20,8
+    EDITTEXT        IDC_EDIT1,51,7,189,14,ES_AUTOHSCROLL
+    LTEXT           "Password",IDC_STATIC,7,47,32,8
+    LTEXT           "Organisation",IDC_STATIC,7,28,40,8
+    EDITTEXT        IDC_EDIT5,51,26,189,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT2,51,43,189,14,ES_AUTOHSCROLL
+    DEFPUSHBUTTON   "Ok",IDOK,131,61,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,190,61,50,14
+END
+
+IDD_PROPERTIES_BWOBJECTS DIALOGEX 0, 0, 282, 182
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Black and White Symbols"
+FONT 8, "MS Sans Serif", 0, 0, 0x0
+BEGIN
+    PUSHBUTTON      "Close",IDCANCEL,84,160,50,14
+    LISTBOX         IDC_PATTERNS,237,23,22,146,WS_TABSTOP
+    LISTBOX         IDC_OBJECTS,25,23,176,100,LBS_EXTENDEDSEL | WS_TABSTOP
+    PUSHBUTTON      "Reset All",IDC_RESET,84,143,50,14
+    PUSHBUTTON      "Assign Symbol",IDC_ASSIGN,84,127,50,14
+    GROUPBOX        "Type",IDC_STATIC,7,124,69,50
+    LTEXT           "Object / Group",IDC_STATIC,7,7,48,8
+    LTEXT           "All Symbols",IDC_STATIC,239,7,36,8
+    CONTROL         "Slider1",IDC_SCROLL_PATTERNS,"msctls_trackbar32",
+                    TBS_VERT | TBS_BOTH | TBS_NOTICKS | WS_TABSTOP,264,21,11,
+                    146
+    CONTROL         "Slider1",IDC_SCROLL_OBJECTS,"msctls_trackbar32",
+                    TBS_VERT | TBS_BOTH | TBS_NOTICKS | WS_TABSTOP,206,21,11,
+                    101
+    CONTROL         "Objects",IDC_RADIO1,"Button",BS_AUTORADIOBUTTON | 
+                    WS_GROUP,13,137,40,10
+    CONTROL         "Groups",IDC_RADIO2,"Button",BS_AUTORADIOBUTTON,13,149,
+                    39,10
+    CONTROL         "a priori Groups",IDC_RADIO3,"Button",BS_AUTORADIOBUTTON,
+                    13,160,61,10
+END
+
+IDD_PROPERTIES_FONT DIALOG  0, 0, 230, 95
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Font"
+FONT 8, "MS Sans Serif"
+BEGIN
+    PUSHBUTTON      "Font...",ID_FONT,7,7,50,14
+    LTEXT           "Example text.",IDC_EXAMPLE_TEXT,7,31,216,57
+END
+
+IDD_FRAMECOUNT DIALOG  0, 0, 188, 66
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Number of Frames"
+FONT 8, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,131,7,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,131,46,50,14
+    LTEXT           "Number of Frames",IDC_STATIC,7,48,58,8
+    EDITTEXT        IDC_NUMFRAMES,73,46,40,14,ES_AUTOHSCROLL
+    LTEXT           "The default number of frames is the number of frames for one rotation about the vertical axis.",
+                    IDC_STATIC,7,7,117,24
+END
+
+IDD_EXCEL_WORKSHEET DIALOG  0, 0, 124, 114
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Table"
+FONT 8, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "Open",IDOK,39,93,50,14
+    LISTBOX         IDC_TABLES,7,7,110,78,LBS_NOINTEGRALHEIGHT | WS_VSCROLL | 
+                    WS_TABSTOP
+END
+
+IDD_GETSERIALNUMBER DIALOGEX 0, 0, 229, 100
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | 
+    WS_SYSMENU
+CAPTION "Enter Serial Number"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,171,58,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,171,79,50,14
+    EDITTEXT        IDC_NUMBER,7,33,215,14,ES_AUTOHSCROLL
+    LTEXT           "The serial number can be found in the 'Order Confirmation' email sent to you after purchasing PATN.",
+                    IDC_STATIC,7,7,214,23
+    LTEXT           "NOTE: There may be a short wait while the serial number entered is checked with eSellerate.  Please be patient.",
+                    IDC_STATIC,49,58,111,35
+END
+
+IDD_INSTALLHELP DIALOGEX 0, 0, 350, 306
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | 
+    WS_SYSMENU
+CAPTION "Update Installer Help"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "Continue",IDOK,161,285,50,14
+    LTEXT           "PATN will now close so that the downloaded update can be installed.  If the installation is cancelled the update file can be found in this location:",
+                    IDC_STATIC,7,7,336,23
+    LTEXT           "Static",IDC_TEXT,7,34,336,24
+    CONTROL         270,IDC_STATIC,"Static",SS_BITMAP,7,69,336,212
+END
+
+IDD_UPDATE_GUIDE DIALOGEX 0, 0, 338, 82
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | 
+    WS_SYSMENU
+CAPTION "PATN    How to check for updates"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "Close",IDOK,143,61,50,14
+    LTEXT           "If your web browser did not open, or you are not connected to the internet, copy and paste this URL into a web browser to check for, and download if available, an update for your version of PATN.",
+                    IDC_STATIC,7,7,324,30
+    EDITTEXT        IDC_EDIT1,7,37,324,14,ES_AUTOHSCROLL | ES_READONLY
+END
+
+IDD_3DLEGEND DIALOGEX 0, 0, 174, 105
+STYLE DS_SETFONT | WS_MINIMIZEBOX | WS_MAXIMIZEBOX | WS_CAPTION | WS_SYSMENU | 
+    WS_THICKFRAME
+EXSTYLE WS_EX_OVERLAPPEDWINDOW | WS_EX_TOOLWINDOW | WS_EX_APPWINDOW
+CAPTION "Ordination Legend"
+FONT 10, "Microsoft Sans Serif", 400, 0, 0x0
+BEGIN
+    CONTROL         "",IDC_LIST,"SysListView32",LVS_SMALLICON | 
+                    LVS_ALIGNLEFT | WS_BORDER | WS_TABSTOP,0,0,173,105
+END
+
+IDD_ASSIGNGROUPS DIALOGEX 0, 0, 251, 163
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Assign rows without groups to existing groups"
+FONT 8, "MS Sans Serif", 0, 0, 0x0
+BEGIN
+    LISTBOX         IDC_ASSOC_MEASURES,8,30,110,52,LBS_NOINTEGRALHEIGHT | 
+                    WS_TABSTOP
+    LTEXT           "Association Measures:",IDC_STATIC,8,20,75,8
+    LTEXT           "Select the desired association measure.",IDC_STATIC,8,7,
+                    236,13
+    EDITTEXT        IDC_CONSTANT,183,29,53,12,ES_AUTOHSCROLL | NOT WS_BORDER,
+                    WS_EX_STATICEDGE
+    LTEXT           "Constant",IDC_STATIC,149,32,29,8
+    CONTROL         "Use Apriori groups",IDC_CHECK1,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,15,109,73,10
+    PUSHBUTTON      "OK",IDC_BUTTON1,194,124,50,14
+    PUSHBUTTON      "Cancel",IDC_BUTTON4,194,142,50,14
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO 
+BEGIN
+    IDD_PAGE_NEW_TABLE_OPTIONS, DIALOG
+    BEGIN
+        BOTTOMMARGIN, 225
+    END
+
+    IDD_ASSOCIATION_PAGE, DIALOG
+    BEGIN
+        LEFTMARGIN, 8
+        BOTTOMMARGIN, 165
+    END
+
+    IDD_ANALYSIS_RECIPE, DIALOG
+    BEGIN
+        LEFTMARGIN, 12
+        RIGHTMARGIN, 336
+        BOTTOMMARGIN, 230
+    END
+
+    IDD_TABLEPROPERTIES, DIALOG
+    BEGIN
+        BOTTOMMARGIN, 50
+    END
+
+    IDD_ATTRIBUTE, DIALOG
+    BEGIN
+        RIGHTMARGIN, 222
+    END
+
+    IDD_PCCVECTORSELECTION, DIALOG
+    BEGIN
+        RIGHTMARGIN, 238
+    END
+
+    IDD_DATA_TRANSFORM, DIALOG
+    BEGIN
+        RIGHTMARGIN, 524
+        VERTGUIDE, 524
+    END
+
+    IDD_ANOSIMRESULTS, DIALOG
+    BEGIN
+        RIGHTMARGIN, 356
+        BOTTOMMARGIN, 153
+    END
+
+    IDD_VIEWHISTORY, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 336
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 230
+    END
+
+    IDD_OBJECTSIZE, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 179
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 39
+    END
+
+    IDD_APPENDOPTIONS, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 242
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 112
+    END
+
+    IDD_PROPERTIES_TABLEPROPERTIES, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 281
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 130
+    END
+
+    IDD_PROPERTIES_VISIBLESTATISTICS, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 189
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 141
+    END
+
+    IDD_PROPERTIES_ORDINATIONDISPLAYTYPE, DIALOG
+    BEGIN
+        LEFTMARGIN, 6
+        RIGHTMARGIN, 280
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 99
+    END
+
+    IDD_PROPERTIES_RANDOMTYPE, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 362
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 122
+    END
+
+    IDD_GETUSERIDENTITY, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 240
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 75
+    END
+
+    IDD_PROPERTIES_BWOBJECTS, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 275
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 175
+    END
+
+    IDD_PROPERTIES_FONT, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 223
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 88
+    END
+
+    IDD_FRAMECOUNT, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 181
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 59
+    END
+
+    IDD_EXCEL_WORKSHEET, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 117
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 107
+    END
+
+    IDD_GETSERIALNUMBER, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 222
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 93
+    END
+
+    IDD_INSTALLHELP, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 343
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 299
+    END
+
+    IDD_UPDATE_GUIDE, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 331
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 75
+    END
+
+    IDD_ASSIGNGROUPS, DIALOG
+    BEGIN
+        LEFTMARGIN, 8
+        RIGHTMARGIN, 244
+        BOTTOMMARGIN, 155
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)\r\n"
+    "#ifdef _WIN32\r\n"
+    "LANGUAGE 9, 1\r\n"
+    "#pragma code_page(1252)\r\n"
+    "#endif\r\n"
+    "#include ""res\\patn.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#include ""afxres.rc""         // Standard components\r\n"
+    "#include ""afxprint.rc""       // printing/print preview resources\r\n"
+    "#include ""afxolecl.rc""       // OLE container resources\r\n"
+    "#include ""afxolesv.rc""       // OLE server resources\r\n"
+    "#include ""afxdb.rc""          // Database resources\r\n"
+    "#endif\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Cursor
+//
+
+IDC_TOP_OF_COLUMN       CURSOR                  "res\\TopOfColumn.cur"
+IDC_DRAGGING_EW         CURSOR                  "res\\DraggingEW.cur"
+IDC_DRAGGING_NS         CURSOR                  "res\\DraggingNS.cur"
+IDC_CAN_DRAG_NS         CURSOR                  "res\\DragNS.cur"
+IDC_LEFT_OF_ROW         CURSOR                  "res\\LeftOfRow.cur"
+IDC_SIZE_COLUMN         CURSOR                  "res\\SizeColumn.cur"
+IDC_SIZE_ROW            CURSOR                  "res\\SizeRow.cur"
+IDC_CAN_DRAG_EW         CURSOR                  "res\\DragEW.cur"
+IDC_SIZE_HIDDEN_COLUMN  CURSOR                  "res\\SizeHiddenColumn.cur"
+IDC_SIZE_HIDDEN_ROW     CURSOR                  "res\\SizeHiddenRow.cur"
+IDC_3DROTATE            CURSOR                  "res\\cursor1.cur"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog Info
+//
+
+IDD_CLASSIFICATION_PAGE_COLS DLGINIT
+BEGIN
+    IDC_FUSE_TECHNIQUE, 0x403, 18, 0
+0x654e, 0x7261, 0x7365, 0x2074, 0x654e, 0x6769, 0x6268, 0x756f, 0x0072, 
+
+    IDC_FUSE_TECHNIQUE, 0x403, 19, 0
+0x7546, 0x7472, 0x6568, 0x7473, 0x4e20, 0x6965, 0x6867, 0x6f62, 0x7275, 
+"\000" 
+    IDC_FUSE_TECHNIQUE, 0x403, 15, 0
+0x6c46, 0x7865, 0x6269, 0x656c, 0x5720, 0x4750, 0x414d, "\000" 
+    IDC_FUSE_TECHNIQUE, 0x403, 15, 0
+0x6c46, 0x7865, 0x6269, 0x656c, 0x5520, 0x4750, 0x414d, "\000" 
+    0
+END
+
+IDD_CLASSIFICATION_PAGE_ROWS DLGINIT
+BEGIN
+    IDC_FUSE_TECHNIQUE, 0x403, 18, 0
+0x654e, 0x7261, 0x7365, 0x2074, 0x654e, 0x6769, 0x6268, 0x756f, 0x0072, 
+
+    IDC_FUSE_TECHNIQUE, 0x403, 19, 0
+0x7546, 0x7472, 0x6568, 0x7473, 0x4e20, 0x6965, 0x6867, 0x6f62, 0x7275, 
+"\000" 
+    IDC_FUSE_TECHNIQUE, 0x403, 15, 0
+0x6c46, 0x7865, 0x6269, 0x656c, 0x5720, 0x4750, 0x414d, "\000" 
+    IDC_FUSE_TECHNIQUE, 0x403, 15, 0
+0x6c46, 0x7865, 0x6269, 0x656c, 0x5520, 0x4750, 0x414d, "\000" 
+    0
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXT
+//
+
+IDR_TEXT1               TEXT                    "res\\patterns.dat"
+IDR_ABOUT_TEXT          TEXT                    "res\\text2.bin"
+IDR_DEMO_MEDALS         TEXT                    "res\\bin00001.bin"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// HTML
+//
+
+IDR_HTML_3DLEGENDDIALOG HTML                    "3dLegendDialog.htm"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE 
+BEGIN
+    ID__SAVEIMAGE           "Save the image as a bmp file\nSave's the image"
+    ID__PRINT               "Print the active document\nPrint"
+    ID__PRINTPREVIEW        "Display full pages\nPrint Preview"
+    ID__SAVEAS              "Save table\nSave table"
+    ID__FONT                "Change font settings\nChange font settings"
+    ID_VIEW_SCATTERPLOT     "Scatterplot of row objects and group statistics\n2D"
+    ID__CHANGEFONT          "Changes the table font between Times New Roman and Courier\nChange table Font"
+END
+
+STRINGTABLE 
+BEGIN
+    ID__SAVEIMAGEAS         "Save Dendrogram as bmp file\nSave Image"
+    ID__USEUSERGROUPCOLOURS "Display objects/centroids with user defined colours\nUse user group colours"
+    ID__EXPORT              "Saves the table in csv file format\nSave table"
+    ID__SAVEASIMAGE         "Save's the image as a bmp file\nSave image"
+    ID__SHOWRANGES          "Displays\\Hides axies range values\nShow ranges"
+    ID__USEBLACKWHITESYMBOLS 
+                            "Displays objects and/or groups as symbols\nDisplay using symbols"
+    ID_VIEW_ORDINATIONSTRESS "Ordination Stress\nOrdination Stress"
+    ID__SELECTGROUPSTATISTICSATTRIBUTE 
+                            "Change attribute for which group statistics are displayed\nChange Group Statistics Attribute"
+    ID__SELECTPCCVECTORS    "Display selected variables fit to ordination\nVariables fit on ordination"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_VIEW_GSTA            "Displays table of group means / presence absence ratio\nGroup Statistics"
+    ID_VIEW_3DGRAPH         "3D display of row objects and group statistics\n3D"
+    ID__ROTATE              "Rotate objects\nRotate objects"
+    ID__MINUSROTATIONSPEED  "Decrease rotation speed\nDecrease rotation speed"
+    ID__DISPLAYLABELS       "Display labels/objects\n Display labels/objects"
+    ID__DISPLAYMST          "Displays/Hides minimum spanning tree\n Display/Hide minimum spanning tree"
+    ID__DISPLAYCENTROIDS    "Displays\\Hides group centroids\nDisplay Centroids"
+    ID__SHOWGROUPING        "Display objects/centroids with centroid colours\nUse centroid"
+    ID__SHOWAXIES           "Display axis\nShow Axis"
+    ID__ADDTEXTBOX          "Add's a textbox to the view\nAdd text box"
+    ID__SHOWSELECTEDONLY    "Displays only the row objects selected in the table\nShow only selected objects"
+    ID__PLUSROTATIONSPEED   "Increase rotation speed\nIncrease rotation speed"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_TABLE_COLUMN_HIDE    "Hide selected column(s)\nHide column(s)"
+    ID_TABLE_COLUMN_UNHIDE  "Unhide selected column(s)\nUnhide column(s)"
+    ID_TABLE_ROW_HIDE       "Hide selected row(s)\nHide row(s)"
+    ID_TABLE_ROW_UNHIDE     "Unhide selected row(s)\nUnhide row(s)"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_TABLE_COLUMN_PROPERTIES "Display column properties\nProperties"
+    ID_TABLE_ROW_ADD        "Add row(s) after last row\nAdd row(s)"
+    ID_TABLE_COLUMN_ADD     "Add column(s) to end of table\nAdd column(s)"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_TABLE_ROW_INSERT     "Insert row(s) after selected row\nInsert row(s)"
+    ID_TABLE_ROW_DELETE     "Delete selected row(s)\nDelete row(s)"
+    ID_TABLE_ROW_MAKEEXTRINSIC 
+                            "Make selected row(s) extrinsic (exclude from analysis)\nMake extrinsic (exclude from analysis)"
+    ID_TABLE_ROW_MAKEINTRINSIC 
+                            "Make selected row(s) intrinsic (include in analysis)\nMake intrinsic (include in analysis)"
+    ID_TABLE_ROW_PROPERTIES "Display row properties\nProperties"
+    ID_TABLE_COLUMN_INSERT  "Insert column(s) after selected column(s)\nInsert column(s)"
+    ID_TABLE_COLUMN_DELETE  "Delete selected column(s)\nDelete column(s)"
+    ID_TABLE_COLUMN_MAKEEXTRINSIC 
+                            "Make selected column(s) extrinsic (exclude from analysis)\nMake extrinsic (exclude from analysis)"
+    ID_TABLE_COLUMN_MAKEINTRINSIC 
+                            "Make selected column(s) intrinsic (include in analysis)\nMake intrinsic (include in analysis)"
+END
+
+STRINGTABLE 
+BEGIN
+    ID__GROUPSONLY          "Show first object/attribute in each group only (display from cutoff)\nShow groups only"
+END
+
+STRINGTABLE 
+BEGIN
+    ID__KRUSKALWALLICEOPTIONS 
+                            "Display Kruskal-Wallis Statistic of variable-group options\nKruskal-Wallis Statistic of variable-group options"
+    ID_VIEW_MCAO            "Permutation test on variables in ordination coordinates\nPermutation test on variables in ordination coordinates"
+END
+
+STRINGTABLE 
+BEGIN
+    ID__SAVEGROUPAFFINITYVECTOR 
+                            "Save Group Composition\nSaves Group Composition"
+    ID__USEGROUPBLACKWHITESYMBOLS 
+                            "Use Group B/W symbols for objects\nUse Group B/W symbols for objects"
+    ID_VIEW_BOXWHISKERSTATISTICS 
+                            "Displays Groups Statistics in Box and Whisker Diagram\nBox-Whisker"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_VIEW_HISTOGRAM       "Produces a histogram of data in selected rows or columns\nHistograms"
+    ID_VIEW_TWAYTABLE       "Displays a two-way table\nTwo-way table"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_VIEW_ANOSIMRESULTS   "ANOSIM results\nANOSIM"
+    ID_VIEW_KRUSKALWALLISRESULTS 
+                            "Kruskal-Wallis Statistic of variable-group\nKruskal-Wallis Statistic of variable-group"
+    ID_VIEW_HISTORY         "Displays History of PATN Project\nRecipe"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_VIEW_FUSIONDETAILS   "Displays fusion history & dendrogram for rows / columns\nDendrograms"
+    ID_VIEW_ASSOCIATIONMATRIX 
+                            "Displays association matrix and it's histogram for rows / columns\nAssociation"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_VIEW_3DGRAPH_DIRECTX70A "Displays 2D/3D Ordination Plot\nOrdination"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_SHOWTABLE            "Show Data Table\nShow Data Table"
+    ID__BWSYMBOLS           "Display Row Black and White Symbols\nDisplay B&W Symbols"
+    ID__CONTROLINDICATOR    "Display Row a priori Group Symbols\nDisplay Row a priori Group Symbols"
+    ID__LABELS              "Display Labels\nDisplay Labels"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_VIEW_SCATTERPLOT33034 
+                            "Displays a scatterplot of two objects or two attributes\nScatterplot"
+END
+
+#endif    // English (Australia) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+/////////////////////////////////////////////////////////////////////////////
+// English (Belize) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENL)
+#ifdef _WIN32
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_BELIZE
+#pragma code_page(1252)
+#endif //_WIN32
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDR_TABLETABS MENU 
+BEGIN
+    POPUP " "
+    BEGIN
+        POPUP "Visible &decimals"
+        BEGIN
+            MENUITEM "&0",                          ID__VISIBLEDECIMALS_0
+            MENUITEM "&1",                          ID__VISIBLEDECIMALS_1
+            MENUITEM "&2",                          ID__VISIBLEDECIMALS_2
+            MENUITEM "&3",                          ID__VISIBLEDECIMALS_3
+            MENUITEM "&4",                          ID__VISIBLEDECIMALS_4
+            MENUITEM "&5",                          ID__VISIBLEDECIMALS_5
+            MENUITEM "&6",                          ID__VISIBLEDECIMALS_6
+            MENUITEM "&7",                          ID__VISIBLEDECIMALS_7
+        END
+    END
+END
+
+#endif    // English (Belize) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE 9, 1
+#pragma code_page(1252)
+#endif
+#include "res\patn.rc2"  // non-Microsoft Visual C++ edited resources
+#include "afxres.rc"         // Standard components
+#include "afxprint.rc"       // printing/print preview resources
+#include "afxolecl.rc"       // OLE container resources
+#include "afxolesv.rc"       // OLE server resources
+#include "afxdb.rc"          // Database resources
+#endif
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

@@ -30,3 +30,6 @@ patn also has a range of tools to help you to to identify the reasons for these 
 I have placed PATN into the public domain as I am less able through time to support it, and develop it further, but I still have some ideas that I would like to see implemented. 
 
 We set up this repository in preparation for releasing the current version of code of patn into the public domain. The software, while old, still has many features and tools that are not currently available. We are hoping that interested people will take it on to bring it into a future using the latest tools such as advanced graphics libraries, interfaces and AI.
+
+## Source code
+Found in the ./src directory, the source code is compatible with Visual Studio .NET 2003.
