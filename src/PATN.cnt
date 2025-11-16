@@ -1,0 +1,225 @@
+:Base PATN.hlp
+:Title PATN Contents
+1 Menus
+2 Start up screen=startup_screen
+2 PATN Help=patn_help
+2 File Menu
+3 File menu commands=menu_file
+3 File New=File_New
+3 File Open=file_open
+3 File Import Data Table=file_import_data
+3 File ODBC Connection=File_ODBC_Connection
+3 File Append=file_append
+3 File Close=File_Close
+3 File Save=File_Save
+3 File Save As=File_Save_As
+3 File Print=file_print
+3 File Print Preview=file_print_preview
+3 File Print Setup=file_print_setup
+3 File Recent Projects=File_recent_projects
+3 File Export history=file_export_history
+3 File Exit=File_Exit
+3 File Import
+4 File Import=file_export_data_table
+4 Microsoft Excel spreadsheet=Microsoft_Excel_spreadsheet
+4 Comma Separated Values file=comma_separated_values_file
+4 File Import Group Compositions=file_import_group_compositions
+4 File Import Ordination Coordinates=File_import_ordination_coordinates
+3 File Export Table Data
+4 File Export Table Data=file_export_data_table
+3 File Export Analysis Data
+4 File Export Analysis Data=file_export_analysis_data
+4 Export Row or Column Association Matrix=export_row_column_association_matrix
+4 Export Row or Column Group Comosition=export_row_column_group_composition
+4 Export Fusion Table=Export_Fusion_Table
+4 Export Group Statistics=export_group_statistics
+4 Export Ordination Coordinates command=Export_Ordination_Coordinates
+3 File Export Evaluation Data
+4 File Export Evaluation Data=file_export_evaluation_data
+4 Export Row or Column ANOSIM Results=export_rowcol_ANOSIM_results
+4 Export Kruskal-Wallis stats=export_kruskal_wallis_stats
+4 Export PCC Results=Export_PCC_Results
+4 Export MCAO results=export_mcao_results
+2 View Menu
+3 View Menu=menu_view
+3 View Toolbar=View_Toolbar
+3 View Status Bar=View_Status_Bar
+3 View Data Table=view_data_table
+3 View Histograms=view_histograms
+3 View box and whisker plots=view_box_whisker
+3 View Association Matrix=view_association_matrix
+3 View Dendrograms=view_dendrograms
+3 View Two-Way table=view_two_way_table
+3 View Ordination Plot=view_ordination_plot
+3 View ANOSIM Results=view_anosim_results
+3 View MCAO Results=view_mcao_results
+3 View History=view_history
+2 Data Menu
+3 Data Menu=Data_menu
+3 Data Row or Column Groups Options=Data_row_col_groups_options
+3 Data Row or Column Selection=data_row_column_selection
+3 Data Selection Options=data_selection_options
+3 Data Transpose=data_transpose
+3 Data Column sub-Menu=data_column_menu
+3 Data Row sub-Menu=data_row_menu
+2 Tools Menu
+3 Tools Menu=Tools_Menu
+3 Tools Options=Tools_Options
+2 Window Menu
+3 Window Commands=window_commands
+3 Cascade Windows=wildows_cascade
+3 Close=Close
+3 Icons - arrange=windows_arrange_icons
+3 Minimize Window=minimize_window
+3 Scroll Bars=scroll_bars
+3 Title bar=title_bar
+3 Window maximize=window_maximise
+3 Window move=window_move
+3 Window size=window_size
+3 Windows Tile=windows_tile
+2 Help Menu
+3 Help About=help_about
+3 Help Context=help_context
+3 Help help=help_help
+3 Help Index=help_index
+3 Help Menu=menu_help
+1 Data Properties
+2 Changing Data Value=hints_changevalue
+2 Column properties=column_properties
+2 Column Width=column_width
+2 Decimal Places=decimal_places
+2 Delete Row or Column=delete_row_column
+2 Extrinsic Variables=properties_extrinsic
+2 Extrinsics and Analysis=hints_extrinsics
+2 Hide Row or Columns=hide_rows_or_columns
+2 Histograms=output_histogram
+2 Information Tabs=hints_tabs
+2 Insert Row or Column=insert_row_column
+2 Intrinsic Variables=properties_intrinsic
+2 Labels=properties_labels
+2 Make Extrinsic=make_extrinsic
+2 Make Intrinsic=make_intrinsic
+2 Missing value=missing_value
+2 Moving rows or columns=Moving_rows_or_columns
+2 Multiple row/column properties=hints_mplrc
+2 Properties=data_properties
+2 Project Properties=project_properties
+2 Row Comparisons=row_comparison
+2 Row properties=row_properties
+2 View Extrinsics=view_extrinsics
+2 Visible Statistics=Visible_Statistics
+2 Unhide Row or Columns=unhide_rows_or_columns
+1 Data Preparation
+2 Transformations and Standardizations - Background=transformations_and_standardizations_background
+2 Transformations and Standarizations Options=transformations_standardizations_options
+2 Transformations=transformation_transformations
+2 Standardisations=transformation_standardizations
+2 Transformation Output=transformation_output
+1 Data Analysis
+2 Analysis - Background=analysis_background
+2 Data Analysis Options=data_analysis_options
+2 Analysis Recipe=analysis_recipe
+2 Association
+3 Association - Background=association_background
+3 View Association Matrix=view_association_matrix
+3 Association Histogram=association_histogram
+3 Formula Terminology=Formula_Terminology_1
+3 Lower-Symmetric Matrices=lower_symmetric_matrices
+3 Association Options
+4 Association Options=Association_options
+4 Bray and Curtis=bray_and_curtis
+4 Gower Metric=Gower_Metric
+4 Minkowski Series=Minkowski_Series
+4 Two-Step=Two_Step
+4 Kulczynski=Kulczynski
+2 Classification
+3 Classification - Background=classification_background
+3 Classification Options=classification_options
+3 Classification - Agglomerative Hierarchical=classification_fusion
+3 Classification - Non-Hierarchical=classification_non_hierarchical
+3 Dendrogram=dendrogram
+2 Ordination
+3 Ordination - Background=ordination_background
+3 Ordination options=ordination_options
+3 Ordination plot=ordination_plot
+3 Ordination Plot Interrogation=Ordination_plot_interrogation
+1 Analysis Evaluation
+2 Analysis Evaluation - Background & Options=analysis_evaluation_background
+2 Evaluation Recipe=evaluation_recipe
+2 ANOSIM
+3 ANOSIM - Background=anosim_background
+3 ANOSIM Options=anosim_options
+3 ANOSIM Output=anosim_output
+2 Group Statistics
+3 Group Statistics - Background=group_statistics_background
+3 Group composition=group_composition
+3 Groups - Manual assignment=groups_manual
+3 Kruskal-Wallis - Background=kruskal_wallis_background
+3 Kruskal-Wallis Options=kruskal_wallis_options
+2 PCC
+3 PCC - Background=pcc_background
+3 PCC & MCAO Options=PCC_MCAO_options
+2 MCAO
+3 MCAO - Background=MCAO_Background
+3 PCC & MCAO Options=PCC_MCAO_options
+2 Minimum Spanning Tree
+3 Minimum Spanning Tree - Background=Minimum_Spanning_Tree_Bakcground
+2 Two Way Table
+3 Two Way Table - Background=Two_Way_Table_Background
+3 Two-way table Options=two_way_table_options
+3 Flip Axes command=Flip_Axes_command
+3 Two Way Table Output=two_way_table_output
+1 Mouse & Keyboard Operations (Ordination Plot)
+2 Left Mouse Click in space=left_mouse_click_space
+2 Left Mouse Click on Objects=left_click_object_ordination
+2 Left Mouse Drag Between Group Centroids=left_mouse_drag_between_centroids
+2 Left Mouse Drag Between Objects=left_mouse_drag_between_objects
+2 Right Mouse Click Menu=Right_mouse_menu
+1 Output
+2 Display
+3 Display Black and White Symbols=display_black_and_white_symbols
+3 Display Centroids=Display_Centroids
+3 Display Data Variables (in Ordination Plot)=Display_data_variables_in_ordination
+3 Display Grouping=display_grouping
+3 Display Labels=Display_Labels
+3 Display Legend=Display_Legend
+3 Display Minimum Spanning Tree=Display_MST
+3 Display Ranges=display_ranges
+3 Display Selected Only=display_selected_only
+3 Display User Colors=display_user_colors
+3 Edit Text Box=edit_text_box
+3 Font Selection=font_selection
+2 Export
+3 Comma Separated Values file=comma_separated_values_file
+3 Export ANOSIM Pair-Wise Results=export_anosim_pairwise_results
+3 Export Column ANOSIM=Export_Column_ANOSIM
+3 Export Group Statistics=export_group_statistics
+3 Export Kruskal-Wallis stats=export_kruskal_wallis_stats
+3 Export MCAO results=export_mcao_results
+3 Export Ordination Coordinates=Export_Ordination_Coordinates
+3 Export PCC Results=Export_PCC_Results
+3 Export Row or Column ANOSIM Results=export_rowcol_ANOSIM_results
+3 Export Fusion Table=Export_Fusion_Table
+3 Export Row or Column Association Matrix=export_row_column_association_matrix
+3 Export Row or Column Group Comosition=export_row_column_group_composition
+3 Export Site Counts=export_site_counts
+3 Export Table Data=export_data_table
+3 Exported Files=hints_export
+1 Hints & Issues
+2 Changing data values=hints_changevalue
+2 Changing group colors=group_colors
+2 Data Errors=Data_Errors
+2 Dendrogram Size=hints_dendsize
+2 Errors=Errors
+2 Example Dataset=Example_Dataset
+2 Extrinsics and Analysis=hints_extrinsics
+2 Hint - Exported Files=hints_export
+2 Hint - Image Display Problems=hint_image_display_problems
+2 Hint - Saving Analysis Results=hints_saving_analysis_results
+2 Hint - PATN Project File=hints_patn_project_file
+2 Hint - Multiple Row or Column Properties=hints_mplrc
+2 Progress Bar=progress_bar
+2 Resize printout=hints_printout
+2 Selecting rows or columns=selecting_rows_or_columns
+2 Transformation Output=transformation_output
+2 Why problems may exist=problems_explain

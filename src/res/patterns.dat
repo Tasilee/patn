@@ -1,0 +1,769 @@
+s 1- empty rect
+2,0,0,0,0,9,9,9,9,0
+e
+s 2- filled rect
+2,1,0,0,0,9,9,9,9,0
+e
+s 3- empty rect + tr diagonal filled
+1,1,0,0,9,0,9,9
+2,0,0,0,0,9,9,9,9,0
+e
+s 4- empty rect + lb diagonal filled
+1,1,0,0,0,9,9,9
+2,0,0,0,0,9,9,9,9,0
+e
+s 53- empty circle
+3,0,5,5,5
+e
+s 54- filled circle
+3,1,5,5,5
+e
+s 32- empty triangle
+1,0,5,0,0,9,9,9
+e
+s 33- filled triangle
+1,1,5,0,0,9,9,9
+e
+s 1- empty diamond
+2,0,5,0,10,5,5,10,0,5
+e
+s 2- filled diamond
+2,1,5,0,10,5,5,10,0,5
+e
+s 32- empty triangle - upside down
+1,0,0,0,9,0,5,9
+e
+s 33- filled triangle - upside down
+1,1,0,0,9,0,5,9
+e
+s 32- empty triangle - point left
+1,0,0,6,9,0,9,9
+e
+s 33- filled triangle - point left
+1,1,0,6,9,0,9,9
+e
+s 32- empty triangle - point right
+1,0,0,0,9,5,0,9
+e
+s 33- filled triangle - point right
+1,1,0,0,9,5,0,9
+e
+s 5- empty rect + diagonal tl to br
+0,0,0,9,9
+2,0,0,0,0,9,9,9,9,0
+e
+s 6- empty rect + diagonal tr to bl
+0,9,0,0,9
+2,0,0,0,0,9,9,9,9,0
+e
+s 7- empty rect + tb divider
+0,5,0,5,9
+2,0,0,0,0,9,9,9,9,0
+e
+s 8- empty rect + lr divider
+0,0,5,9,5
+2,0,0,0,0,9,9,9,9,0
+e
+s 9- empty rect + diagonal cross
+0,0,0,9,9
+0,9,0,0,9
+2,0,0,0,0,9,9,9,9,0
+e
+s 10- empty rect + direct cross
+0,5,0,5,9
+0,0,5,9,5
+2,0,0,0,0,9,9,9,9,0
+e
+s 11- empty rect + dot
+3,1,5,5,1
+2,0,0,0,0,9,9,9,9,0
+e
+s 12- empty rect + diagonalcross + rmost filled
+0,0,0,9,9
+0,9,0,0,9
+1,1,5,5,9,0,9,0
+2,0,0,0,0,9,9,9,9,0
+e
+s 13- empty rect + diagonalcross + tmost filled
+0,0,0,9,9
+0,9,0,0,9
+1,1,5,5,0,0,9,0
+2,0,0,0,0,9,9,9,9,0
+e
+s 14- empty rect + diagonalcross + lmost filled
+0,0,0,9,9
+0,9,0,0,9
+1,1,5,5,0,0,0,9
+2,0,0,0,0,9,9,9,9,0
+e
+s 15- empty rect + diagonalcross + bmost filled
+0,0,0,9,9
+0,9,0,0,9
+1,1,5,5,0,9,9,9
+2,0,0,0,0,9,9,9,9,0
+e
+s 16- empty rect + directcross + tr filled
+0,5,0,5,9
+0,0,5,9,5
+2,1,5,5,5,0,9,0,9,5
+2,0,0,0,0,9,9,9,9,0
+e
+s 17- empty rect + directcross + tl filled
+0,5,0,5,9
+0,0,5,9,5
+2,1,0,0,5,0,5,5,5,0
+2,0,0,0,0,9,9,9,9,0
+e
+s 18- empty rect + directcross + bl filled
+0,5,0,5,9
+0,0,5,9,5
+2,1,5,5,0,5,0,9,5,9
+2,0,0,0,0,9,9,9,9,0
+e
+s 19- empty rect + directcross + br filled
+0,5,0,5,9
+0,0,5,9,5
+2,1,5,5,5,9,9,9,9,5
+2,0,0,0,0,9,9,9,9,0
+e
+s 20- empty rect + thalf filled
+2,1,0,0,0,5,9,5,9,0
+2,0,0,0,0,9,9,9,9,0
+e
+s 21- empty rect + bhalf filled
+2,1,0,5,9,5,9,9,0,9
+2,0,0,0,0,9,9,9,9,0
+e
+s 22- empty rect + lhalf filled
+2,1,0,0,5,0,5,9,0,9
+2,0,0,0,0,9,9,9,9,0
+e
+s 23- empty rect + rhalf filled
+2,1,5,0,5,9,9,9,9,0
+2,0,0,0,0,9,9,9,9,0
+e
+s 24- empty rect + tl diagonal filled
+1,1,0,0,0,9,9,0
+2,0,0,0,0,9,9,9,9,0
+e
+s 25- empty rect + br diagonal filled
+1,1,0,9,9,9,9,0
+2,0,0,0,0,9,9,9,9,0
+e
+s 26- empty rect + small empty rect
+2,0,3,3,6,3,6,6,3,6
+2,0,0,0,0,9,9,9,9,0
+e
+s 27- empty rect + small filled rect
+2,1,3,3,6,3,6,6,3,6
+2,0,0,0,0,9,9,9,9,0
+e
+s 28- empty rect + small empty circle
+3,0,5,5,2
+2,0,0,0,0,9,9,9,9,0
+e
+s 29- empty rect + small filled circle
+3,1,5,5,2
+2,0,0,0,0,9,9,9,9,0
+e
+s 30- empty rect + small empty triangle
+1,0,5,3,3,6,6,6
+2,0,0,0,0,9,9,9,9,0
+e
+s 31- empty rect + small filled triangle
+1,1,5,3,3,6,6,6
+2,0,0,0,0,9,9,9,9,0
+e
+s 34- empty triangle + rhalf filled
+1,1,5,0,5,9,9,9
+1,0,5,0,0,9,9,9
+e
+s 35- empty triangle + lhalf filled
+1,1,5,0,5,9,0,9
+1,0,5,0,0,9,9,9
+e
+s 36- empty triangle + v line
+0,5,0,5,9
+1,0,5,0,0,9,9,9
+e
+s 37- empty triangle + dividing line from lmost point (?)
+0,0,9,7,3
+1,0,5,0,0,9,9,9
+e
+s 38- empty triangle + dividing line from rmost point (?)
+0,9,9,2,3
+1,0,5,0,0,9,9,9
+e
+s 39- empty triangle + divline at lmost + top filled
+1,1,5,0,0,9,7,3
+1,0,5,0,0,9,9,9
+e
+s 40- empty triangle + divline at lmost + bottom filled
+1,1,0,9,9,9,7,3
+1,0,5,0,0,9,9,9
+e
+s 41- empty triangle + divline at rmost + top filled
+1,1,5,0,9,9,2,3
+1,0,5,0,0,9,9,9
+e
+s 42- empty triangle + divline at rmost + bottom filled
+1,1,0,9,9,9,2,3
+1,0,5,0,0,9,9,9
+e
+s 43- empty triangle + all divlines
+0,5,0,5,9
+0,9,9,2,3
+0,0,9,7,3
+1,0,5,0,0,9,9,9
+e
+s 44- empty triangle + all divlines + rmost filled
+0,5,0,5,9
+0,0,9,7,3
+2,1,5,9,5,6,7,3,9,9
+1,0,5,0,0,9,9,9
+e
+s 45- empty triangle + all divlines + lmost filled
+0,5,0,5,9
+0,9,9,2,3
+2,1,5,9,5,6,2,3,0,9
+1,0,5,0,0,9,9,9
+e
+s 46- empty triangle + all divlines + tmost filled
+0,9,9,2,3
+0,0,9,7,3
+2,1,2,3,5,6,7,3,5,0
+1,0,5,0,0,9,9,9
+e
+s 47- empty triangle + small empty triangle
+1,0,5,3,3,6,6,6
+1,0,5,0,0,9,9,9
+e
+s 48- empty triangle + small filled triangle
+1,1,5,3,3,6,6,6
+1,0,5,0,0,9,9,9
+e
+s 49- empty triangle + small empty square
+2,0,4,4,4,6,6,6,6,4
+1,0,5,0,0,9,9,9
+e
+s 50- empty triangle + small filled square
+2,1,4,4,4,6,6,6,6,4
+1,0,5,0,0,9,9,9
+e
+s 51- empty triangle + small empty circle
+3,0,5,5,2
+1,0,5,0,0,9,9,9
+e
+s 52- empty triangle + small filled circle
+3,1,5,5,4
+1,0,5,0,0,9,9,9
+e
+
+s 55- empty circle + rhalf filled
+3,0,5,5,5
+1,1,5,0,5,9,9,5
+e
+s 56- circle tl + line to br
+3,0,3,5,3
+0,3,3,9,9
+e
+s 57- circle tr + line to bl
+3,0,6,5,3
+0,6,3,0,9
+e
+s 58- circle bl + line to tr
+3,0,3,5,3
+0,3,6,9,0
+e
+s 59- circle br + line to tl
+3,0,6,5,3
+0,6,6,0,0
+e
+s 60- circle filled tl + line to br
+3,1,3,5,3
+0,3,3,9,9
+e
+s 61- circle filled tr + line to bl
+3,1,6,5,3
+0,6,3,0,9
+e
+s 62- circle filled bl + line to tr
+3,1,3,5,3
+0,3,6,9,0
+e
+s 63- circle filled br + line to tl
+3,1,6,5,3
+0,6,6,0,0
+e
+s 64- square tl + line to br
+2,0,0,0,3,0,3,3,0,3
+0,9,9,3,3
+e
+s 65- square tr + line to bl
+2,0,6,0,6,3,9,3,9,0
+0,6,3,0,9
+e
+s 66- square bl + line to tr
+2,0,0,9,0,6,3,6,3,9
+0,9,0,3,6
+e
+s 67- square br + line to tl
+2,0,9,9,6,9,6,6,9,6
+0,0,0,6,6
+e
+s 68- square filled tl + line to br
+2,1,0,0,3,0,3,3,0,3
+0,9,9,3,3
+e
+s 69- square filled tr + line to bl
+2,1,6,0,6,3,9,3,9,0
+0,6,3,0,9
+e
+s 70- square filled bl + line to tr
+2,1,0,9,0,6,3,6,3,9
+0,9,0,3,6
+e
+s 71- square filled br + line to tl
+2,1,9,9,6,9,6,6,9,6
+0,0,0,6,6
+e
+s 72- triangle tl + line to br
+1,0,2,0,3,3,0,3
+0,3,3,9,9
+e
+s 73- triangle tr + line to bl
+1,0,8,0,9,3,6,3
+0,6,3,0,9
+e
+s 74- triangle bl + line to tr
+1,0,0,6,3,6,2,9
+0,9,0,3,6
+e
+s 75- triangle br + line to tl
+1,0,8,9,6,6,9,6
+0,6,6,0,0
+e
+s 76- triangle filled tl + line to br
+1,1,2,0,3,3,0,3
+0,3,3,9,9
+e
+s 77- triangle filled tr + line to bl
+1,1,8,0,9,3,6,3
+0,6,3,0,9
+e
+s 78- triangle filled bl + line to tr
+1,1,0,6,3,6,2,9
+0,9,0,3,6
+e
+s 79- triangle filled br + line to tl
+1,1,8,9,6,6,9,6
+0,6,6,0,0
+e
+s 80- centre small triangle + horzontal line
+1,0,5,3,3,6,7,6
+0,0,5,9,5
+e
+s 81- centre small triangle + vertical line
+1,0,5,3,3,6,7,6
+0,5,0,5,9
+e
+s 82- centre small triangle + horz/vert lines
+1,0,5,3,3,6,7,6
+0,0,5,9,5
+0,5,0,5,9
+e
+s 83- centre small triangle + tl to br line
+1,0,5,3,3,6,7,6
+0,0,0,9,9
+e
+s 84- centre small triangle + tr to bl line
+1,0,5,3,3,6,7,6
+0,9,0,0,9
+e
+s 85- centre small triangle + tl-br & tr-bl lines
+1,0,5,3,3,6,7,6
+0,0,0,9,9
+0,9,0,0,9
+e
+s 86- centre filled small triangle + horzontal line
+1,1,5,3,3,6,7,6
+0,0,5,9,5
+e
+s 87- centre filled small triangle + vertical line
+1,1,5,3,3,6,7,6
+0,5,0,5,9
+e
+s 88- centre filled small triangle + horz/vert lines
+1,1,5,3,3,6,7,6
+0,0,5,9,5
+0,5,0,5,9
+e
+s 89- centre filled small triangle + tl to br line
+1,1,5,3,3,6,7,6
+0,0,0,9,9
+e
+s 90- centre filled small triangle + tr to bl line
+1,1,5,3,3,6,7,6
+0,9,0,0,9
+e
+s 91- centre filled small triangle + tl-br & tr-bl lines
+1,1,5,3,3,6,7,6
+0,0,0,9,9
+0,9,0,0,9
+e
+s 92- centre small square + horzontal line
+2,0,3,3,3,6,6,6,6,3
+0,0,5,9,5
+e
+s 93- centre small square + vertical line
+2,0,3,3,3,6,6,6,6,3
+0,5,0,5,9
+e
+s 94- centre small square + horz/vert lines
+2,0,3,3,3,6,6,6,6,3
+0,0,5,9,5
+0,5,0,5,9
+e
+s 95- centre small square + tl to br line
+2,0,3,3,3,6,6,6,6,3
+0,0,0,9,9
+e
+s 96- centre small square + tr to bl line
+2,0,3,3,3,6,6,6,6,3
+0,9,0,0,9
+e
+s 97- centre small square + tl-br & tr-bl lines
+2,0,3,3,3,6,6,6,6,3
+0,0,0,9,9
+0,9,0,0,9
+e
+s 98- centre filled small square + horzontal line
+2,1,3,3,3,6,6,6,6,3
+0,0,5,9,5
+e
+s 99- centre filled small square + vertical line
+2,1,3,3,3,6,6,6,6,3
+0,5,0,5,9
+e
+s 100- centre filled small square + horz/vert lines
+2,1,3,3,3,6,6,6,6,3
+0,0,5,9,5
+0,5,0,5,9
+e
+s 101- centre filled small square + tl to br line
+2,1,3,3,3,6,6,6,6,3
+0,0,0,9,9
+e
+s 102- centre filled small square + tr to bl line
+2,1,3,3,3,6,6,6,6,3
+0,9,0,0,9
+e
+s 103- centre filled small square + tl-br & tr-bl lines
+2,1,3,3,3,6,6,6,6,3
+0,0,0,9,9
+0,9,0,0,9
+e
+s 104- centre small circle + horzontal line
+3,0,5,5,3
+0,0,5,9,5
+e
+s 105- centre small circle + vertical line
+3,0,5,5,3
+0,5,0,5,9
+e
+s 106- centre small circle + horz/vert lines
+3,0,5,5,3
+0,0,5,9,5
+0,5,0,5,9
+e
+s 107- centre small circle + tl to br line
+3,0,5,5,3
+0,0,0,9,9
+e
+s 108- centre small circle + tr to bl line
+3,0,5,5,3
+0,9,0,0,9
+e
+s 109- centre small circle + tl-br & tr-bl lines
+3,0,5,5,3
+0,0,0,9,9
+0,9,0,0,9
+e
+s 110- centre filled small circle + horzontal line
+3,1,5,5,3
+0,0,5,9,5
+e
+s 111- centre filled small circle + vertical line
+3,1,5,5,3
+0,5,0,5,9
+e
+s 112- centre filled small circle + horz/vert lines
+3,1,5,5,3
+0,0,5,9,5
+0,5,0,5,9
+e
+s 113- centre filled small circle + tl to br line
+3,1,5,5,3
+0,0,0,9,9
+e
+s 114- centre filled small circle + tr to bl line
+3,1,5,5,3
+0,9,0,0,9
+e
+s 115- centre filled small circle + tl-br & tr-bl lines
+3,1,5,5,3
+0,0,0,9,9
+0,9,0,0,9
+e
+s 116- horz line
+0,0,5,9,5
+e
+s 117- vert line
+0,5,0,5,9
+e
+s 118- horz+vert line
+0,0,5,9,5
+0,5,0,5,9
+e
+s 119- tl-br line
+0,0,0,9,9
+e
+s 120- tr-bl line
+0,9,0,0,9
+e
+s 121- tr-bl + tl-br line
+0,0,0,9,9
+0,9,0,0,9
+e
+s 122- horz+vert+tr-bl+tl-br line
+0,0,5,9,5
+0,5,0,5,9
+0,0,0,9,9
+0,9,0,0,9
+e
+s 123- 2*horz + square small
+2,0,3,3,6,3,6,6,3,6
+0,0,3,9,3
+0,0,6,9,6
+e
+s 124- 2*horz + square small filled
+2,1,3,3,6,3,6,6,3,6
+0,0,3,9,3
+0,0,6,9,6
+e
+s 125- 2*vert + square small 
+2,0,3,3,6,3,6,6,3,6
+0,3,0,3,9
+0,6,0,6,9
+e
+s 126- 2*vert + square small filled
+2,1,3,3,6,3,6,6,3,6
+0,3,0,3,9
+0,6,0,6,9
+e
+s 127- 2*vert + 2*horz + square small
+2,0,3,3,6,3,6,6,3,6
+0,3,0,3,9
+0,6,0,6,9
+0,0,3,9,3
+0,0,6,9,6
+e
+s 128- 2*vert + 2*horz + square small filled 
+2,0,3,3,6,3,6,6,3,6
+0,3,0,3,9
+0,6,0,6,9
+0,0,3,9,3
+0,0,6,9,6
+e
+s 129- 2*horz + triangle small
+1,0,5,3,6,3,6,6
+0,0,3,9,3
+0,0,6,9,6
+e
+s 130- 2*horz + triangle small filled
+1,1,5,3,6,3,6,6
+0,0,3,9,3
+0,0,6,9,6
+e
+s 131- 2*vert + triangle small 
+1,0,5,3,6,3,6,6
+0,3,0,3,9
+0,6,0,6,9
+e
+s 132- 2*vert + triangle small filled
+1,1,5,3,6,3,6,6
+0,3,0,3,9
+0,6,0,6,9
+e
+s 133- 2*vert + 2*horz + triangle small
+1,0,5,3,6,3,6,6
+0,3,0,3,9
+0,6,0,6,9
+0,0,3,9,3
+0,0,6,9,6
+e
+s 134- 2*vert + 2*horz + triangle small filled 
+1,1,5,3,6,3,6,6
+0,3,0,3,9
+0,6,0,6,9
+0,0,3,9,3
+0,0,6,9,6
+e
+s 135- 2*horz + circle small
+3,0,5,5,3
+0,0,3,9,3
+0,0,6,9,6
+e
+s 136- 2*horz + circle small filled
+3,1,5,5,3
+0,0,3,9,3
+0,0,6,9,6
+e
+s 137- 2*vert + circle small 
+3,0,5,5,3
+0,3,0,3,9
+0,6,0,6,9
+e
+s 138- 2*vert + circle small filled
+3,1,5,5,3
+0,3,0,3,9
+0,6,0,6,9
+e
+s 139- 2*vert + 2*horz + circle small
+3,0,5,5,3
+0,3,0,3,9
+0,6,0,6,9
+0,0,3,9,3
+0,0,6,9,6
+e
+s 140- 2*vert + 2*horz + circle small filled 
+3,1,5,5,3
+0,3,0,3,9
+0,6,0,6,9
+0,0,3,9,3
+0,0,6,9,6
+e
+s 141- shapes1
+1,1,5,5,0,0,5,2
+1,1,5,5,9,0,5,2
+3,0,5,5,3
+e
+s 142- shapes1 upsidedown
+1,1,5,5,0,9,5,7
+1,1,5,5,9,9,5,7
+3,0,5,5,3
+e
+s 143- empty circle + diagonal cross
+0,2,2,7,7
+0,2,7,7,2
+3,0,5,5,5
+e
+s 144- empty circle + vertical line
+0,5,0,5,9
+3,0,5,5,5
+e
+s 145- empty circle + horizontal line
+0,0,5,9,5
+3,0,5,5,5
+e
+s 146- empty circle + direct cross
+0,5,0,5,9
+0,0,5,9,5
+3,0,5,5,5
+e
+s 147- empty circle + lr slash
+0,2,2,7,7
+3,0,5,5,5
+e
+s 148- empty circle + rl slash
+0,2,7,7,2
+3,0,5,5,5
+e
+s 149- empty circle + diagonal cross + rmost filled
+1,1,5,5,7,2,7,7
+0,2,2,7,7
+0,2,7,7,2
+3,0,5,5,5
+e
+s 150- empty circle + diagonal cross + lmost filled
+1,1,5,5,2,2,2,7
+0,2,2,7,7
+0,2,7,7,2
+3,0,5,5,5
+e
+s 151- empty circle + diagonal cross + tmost filled
+1,1,5,5,2,2,7,2
+0,2,2,7,7
+0,2,7,7,2
+3,0,5,5,5
+e
+s 152- empty circle + diagonal cross + bmost filled
+1,1,5,5,2,7,7,7
+0,2,2,7,7
+0,2,7,7,2
+3,0,5,5,5
+e
+s 153- empty circle + direct cross + rmost filled
+1,1,5,5,5,0,9,5
+0,5,0,5,9
+0,0,5,9,5
+3,0,5,5,5
+e
+s 154- empty circle + direct cross + lmost filled
+1,1,5,5,5,0,0,5
+0,5,0,5,9
+0,0,5,9,5
+3,0,5,5,5
+e
+s 155- empty circle + direct cross + tmost filled
+1,1,5,5,0,5,5,9
+0,5,0,5,9
+0,0,5,9,5
+3,0,5,5,5
+e
+s 156- empty circle + direct cross + bmost filled
+1,1,5,5,5,9,9,5
+0,5,0,5,9
+0,0,5,9,5
+3,0,5,5,5
+e
+s 157- empty circle + tophalf filled
+2,1,0,0,0,5,9,5,9,0
+3,0,5,5,5
+e
+s 158- empty circle + bhalf filled
+2,1,0,5,0,9,9,9,9,5
+3,0,5,5,5
+e
+s 159- empty circle + lhalf filled
+2,1,5,0,5,9,9,9,9,0
+3,0,5,5,5
+e
+s 160- empty circle + rhalf filled
+2,1,5,0,5,9,0,9,0,0
+3,0,5,5,5
+e
+s 161- empty circle + small empty circle
+3,0,5,5,3
+3,0,5,5,5
+e
+s 162- empty circle + small filled circle
+3,1,5,5,3
+3,0,5,5,5
+e
+s 163- empty circle + small empty square
+1,0,3,3,3,6,6,6,6,3
+3,0,5,5,5
+e
+s 164- empty circle + small filled square
+1,1,3,3,3,6,6,6,6,3
+3,0,5,5,5
+e
+s 165- empty circle + small empty triangle
+1,0,5,3,3,6,6,6
+3,0,5,5,5
+e
+s 166- empty circle + small filled triangle
+1,1,5,3,3,6,6,6
+3,0,5,5,5
+eee

@@ -1,0 +1,105 @@
+// Bitms.h: interface for the CBitms class.
+//
+//////////////////////////////////////////////////////////////////////
+
+#if !defined(AFX_BITMS_H__23823065_6B74_11D4_A3D4_525405F5DADA__INCLUDED_)
+#define AFX_BITMS_H__23823065_6B74_11D4_A3D4_525405F5DADA__INCLUDED_
+
+#if _MSC_VER > 1000
+#pragma once
+#endif // _MSC_VER > 1000
+
+
+/*
+ * Include necessary headers.
+ */
+
+//#  include <GL/glut.h>
+#  ifdef WIN32
+#    include <windows.h>
+#    include <wingdi.h>
+#  endif /* WIN32 */
+
+/*
+ * Make this header file work with C and C++ source code...
+ */
+
+#  ifdef __cplusplus
+extern "C" {
+#  endif /* __cplusplus */
+
+
+/*
+ * Bitmap file data structures (these are defined in <wingdi.h> under
+ * Windows...)
+ *
+ * Note that most Windows compilers will pack the following structures, so
+ * when reading them under MacOS or UNIX we need to read individual fields
+ * to avoid differences in alignment...
+ */
+
+#  ifndef WIN32
+typedef struct                       /**** BMP file header structure ****/
+    {
+    unsigned short bfType;           /* Magic number for file */
+    unsigned int   bfSize;           /* Size of file */
+    unsigned short bfReserved1;      /* Reserved */
+    unsigned short bfReserved2;      /* ... */
+    unsigned int   bfOffBits;        /* Offset to bitmap data */
+    } BITMAPFILEHEADER;
+
+#  define BF_TYPE 0x4D42             /* "MB" */
+
+typedef struct                       /**** BMP file info structure ****/
+    {
+    unsigned int   biSize;           /* Size of info header */
+    int            biWidth;          /* Width of image */
+    int            biHeight;         /* Height of image */
+    unsigned short biPlanes;         /* Number of color planes */
+    unsigned short biBitCount;       /* Number of bits per pixel */
+    unsigned int   biCompression;    /* Type of compression to use */
+    unsigned int   biSizeImage;      /* Size of image data */
+    int            biXPelsPerMeter;  /* X pixels per meter */
+    int            biYPelsPerMeter;  /* Y pixels per meter */
+    unsigned int   biClrUsed;        /* Number of colors used */
+    unsigned int   biClrImportant;   /* Number of important colors */
+    } BITMAPINFOHEADER;
+
+/*
+ * Constants for the biCompression field...
+ */
+
+#  define BI_RGB       0             /* No compression - straight BGR data */
+#  define BI_RLE8      1             /* 8-bit run-length compression */
+#  define BI_RLE4      2             /* 4-bit run-length compression */
+#  define BI_BITFIELDS 3             /* RGB bitmap with RGB masks */
+
+typedef struct                       /**** Colormap entry structure ****/
+    {
+    unsigned char  rgbBlue;          /* Blue value */
+    unsigned char  rgbGreen;         /* Green value */
+    unsigned char  rgbRed;           /* Red value */
+    unsigned char  rgbReserved;      /* Reserved */
+    } RGBQUAD;
+
+typedef struct                       /**** Bitmap information structure ****/
+    {
+    BITMAPINFOHEADER bmiHeader;      /* Image header */
+    RGBQUAD          bmiColors[256]; /* Image colormap */
+    } BITMAPINFO;
+#  endif /* !WIN32 */
+
+/*
+ * Prototypes...
+ */
+
+//extern GLubyte *LoadDIBitmap(const char *filename, BITMAPINFO **info);
+extern unsigned char *LoadDIBitmap(const char *filename, BITMAPINFO **info);
+extern int     SaveDIBitmap(const char *filename, BITMAPINFO *info,
+                            unsigned char *bits);
+
+#  ifdef __cplusplus
+}
+#  endif /* __cplusplus */
+
+#endif // !defined(AFX_BITMS_H__23823065_6B74_11D4_A3D4_525405F5DADA__INCLUDED_)
